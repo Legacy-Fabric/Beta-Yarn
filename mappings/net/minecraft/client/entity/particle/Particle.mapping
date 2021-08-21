@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_388 net/minecraft/client/entity/particle/Particle
+	COMMENT Preliminary implementation of non-entity particles?
+	FIELD field_1493 isGone Z
+	FIELD field_1504 rand Ljava/util/Random;
+	METHOD method_1237 beforeUpdate ()V
+	METHOD method_1238 update (Lnet/minecraft/class_35;)V
+		ARG 1 renderer

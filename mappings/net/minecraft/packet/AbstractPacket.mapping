@@ -5,7 +5,7 @@ CLASS net/minecraft/class_169 net/minecraft/packet/AbstractPacket
 	FIELD field_902 clientToServerPackets Ljava/util/Set;
 	FIELD field_904 readPackets I
 	FIELD field_905 createdTimestamp J
-	FIELD field_906 levelPacket Z
+	FIELD field_906 worldPacket Z
 	METHOD method_798 length ()I
 	METHOD method_799 create (I)Lnet/minecraft/class_169;
 		ARG 0 id

@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_59 net/minecraft/world/WorldListener
+	METHOD method_1151 (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockEntity
+	METHOD method_1152 playWorldEvent (Lnet/minecraft/class_54;IIIII)V
+	METHOD method_1153 addParticle (Ljava/lang/String;DDDDDD)V
+	METHOD method_1156 drawCape (Lnet/minecraft/class_57;)V

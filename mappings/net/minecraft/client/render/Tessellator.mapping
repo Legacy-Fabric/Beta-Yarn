@@ -10,12 +10,12 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	FIELD field_2061 vertexCount I
 	FIELD field_2062 textureX D
 	FIELD field_2063 textureY D
-	FIELD field_2064 colour I
-	FIELD field_2065 hasColour Z
+	FIELD field_2064 color I
+	FIELD field_2065 hasColor Z
 	FIELD field_2066 hasTexture Z
 	FIELD field_2067 hasNormals Z
 	FIELD field_2069 vertexAmount I
-	FIELD field_2070 disableColour Z
+	FIELD field_2070 disableColor Z
 	FIELD field_2071 drawingMode I
 	FIELD field_2072 xOffset D
 	FIELD field_2073 yOffset D
@@ -27,16 +27,16 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	METHOD method_1686 setTextureXY (DD)V
 	METHOD method_1687 addVertex (DDD)V
 	METHOD method_1688 vertex (DDDDD)V
-	METHOD method_1689 colour (FFF)V
-	METHOD method_1690 colour (FFFF)V
+	METHOD method_1689 color (FFF)V
+	METHOD method_1690 color (FFFF)V
 	METHOD method_1691 start (I)V
-	METHOD method_1692 colour (II)V
-	METHOD method_1693 colour (III)V
-	METHOD method_1694 colour (IIII)V
+	METHOD method_1692 color (II)V
+	METHOD method_1693 color (III)V
+	METHOD method_1694 color (IIII)V
 	METHOD method_1695 start ()V
 	METHOD method_1696 setOffset (DDD)V
 	METHOD method_1697 setNormal (FFF)V
-	METHOD method_1698 colour (I)V
-	METHOD method_1699 disableColour ()V
+	METHOD method_1698 color (I)V
+	METHOD method_1699 disableColor ()V
 	METHOD method_1700 addOffset (FFF)V
 	METHOD method_1701 clear ()V

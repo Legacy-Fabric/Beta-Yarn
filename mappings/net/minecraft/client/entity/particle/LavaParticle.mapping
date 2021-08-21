@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_178 net/minecraft/client/entity/particle/LavaParticle
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

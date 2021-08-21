@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_284 net/minecraft/server/gui/PlayerList
-	FIELD field_1135 minecraftServer Lnet/minecraft/server/MinecraftServer;
+	FIELD field_1135 server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server

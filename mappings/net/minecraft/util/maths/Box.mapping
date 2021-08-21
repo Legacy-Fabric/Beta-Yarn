@@ -7,8 +7,34 @@ CLASS net/minecraft/class_25 net/minecraft/util/maths/Box
 	FIELD field_134 maxZ D
 	FIELD field_135 uselessWasteOfMemory Ljava/util/List;
 	FIELD field_136 thisIsAlwaysZero I
+	METHOD <init> (DDDDDD)V
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ
+	METHOD method_102 addPos (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_106 averageDimension ()D
 	METHOD method_87 create (DDDDDD)Lnet/minecraft/class_25;
+		ARG 0 minX
+		ARG 2 minY
+		ARG 4 minZ
+		ARG 6 maxX
+		ARG 8 maxY
+		ARG 10 maxZ
 	METHOD method_90 boxIntersects (Lnet/minecraft/class_25;)Z
 	METHOD method_93 expand (DDD)Lnet/minecraft/class_25;
 	METHOD method_94 createButWasteMemory (DDDDDD)Lnet/minecraft/class_25;
+	METHOD method_96 copy (Lnet/minecraft/class_25;)V
+		ARG 1 other
+	METHOD method_99 setAllCoords (DDDDDD)Lnet/minecraft/class_25;
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ

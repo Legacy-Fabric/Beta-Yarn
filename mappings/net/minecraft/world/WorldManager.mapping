@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_445 net/minecraft/world/WorldManager
+	FIELD field_1701 worldFile Ljava/io/File;
+	METHOD <init> (Ljava/io/File;Z)V
+		ARG 1 file
+	METHOD method_1478 getWorldDat (II)Ljava/io/File;
+	METHOD method_1480 (Lnet/minecraft/class_43;Lnet/minecraft/class_18;Lnet/minecraft/class_8;)V
+		ARG 0 chunk
+		ARG 1 world
+		ARG 2 tag

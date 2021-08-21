@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_314 net/minecraft/packet/DebugCounter
+	COMMENT This class has no practical function due to its private fields,
+	COMMENT and is likely leftover from debugging.
+	FIELD field_1200 counter I
+	FIELD field_1201 totalLength J
+	METHOD <init> (Lnet/minecraft/class_144;)V
+		ARG 1 debug
+	METHOD method_1036 add (I)V
+		ARG 1 length

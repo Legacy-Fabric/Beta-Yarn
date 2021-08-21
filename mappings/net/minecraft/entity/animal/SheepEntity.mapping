@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_613 net/minecraft/entity/animal/SheepEntity
+	METHOD method_2045 setSheared (Z)V
+	METHOD method_2046 setColor (I)V
+		ARG 1 hexColor
+	METHOD method_2047 getColor ()I
+	METHOD method_2048 isSheared ()Z

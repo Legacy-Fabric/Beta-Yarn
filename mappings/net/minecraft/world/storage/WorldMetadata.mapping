@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_591 net/minecraft/world/storage/WorldMetadata
+	FIELD field_2557 fileName Ljava/lang/String;
+	FIELD field_2558 worldName Ljava/lang/String;
+	FIELD field_2559 lastPlayedTime J
+	FIELD field_2560 fileSize J
+	FIELD field_2561 version Z
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;JJZ)V
+		ARG 1 fileName
+		ARG 2 worldName
+		ARG 3 lastPlayedTime
+		ARG 5 filesize
+		ARG 7 version
+	METHOD compareTo (Ljava/lang/Object;)I
+		ARG 1 other
+	METHOD method_1956 getFileName ()Ljava/lang/String;
+	METHOD method_1958 getWorldName ()Ljava/lang/String;
+	METHOD method_1959 getFileSize ()J
+	METHOD method_1960 getVersion ()Z
+	METHOD method_1961 getLastPlayedTime ()J

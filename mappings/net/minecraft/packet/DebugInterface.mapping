@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_144 net/minecraft/packet/DebugInterface
+	COMMENT This interface has no implementations and is only used as a
+	COMMENT constructor parameter in an otherwise useless class.

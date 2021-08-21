@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_186 net/minecraft/world/decoration/LargeOakTreeDecoration
+	FIELD field_654 scaleX D
+	FIELD field_655 scaleZ D
+	FIELD field_657 scaleY I

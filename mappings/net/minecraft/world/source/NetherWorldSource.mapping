@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_359 net/minecraft/world/source/NetherWorldSource
+	FIELD field_1344 rand Ljava/util/Random;
+	FIELD field_1350 world Lnet/minecraft/class_18;
+	FIELD field_1355 carver Lnet/minecraft/class_105;
+	METHOD <init> (Lnet/minecraft/class_18;J)V
+		ARG 1 world
+		ARG 2 seed
+	METHOD method_1180 generate (II[B)V
+	METHOD method_1182 generateExtras (II[B)V

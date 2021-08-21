@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_448 net/minecraft/world/storage/OldWorldStorage
+	FIELD field_1706 path Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 file

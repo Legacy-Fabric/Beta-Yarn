@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_77 net/minecraft/client/entity/particle/ParticleEntity
+	FIELD field_2635 texture I
+	FIELD field_2642 red F
+	FIELD field_2643 green F
+	FIELD field_2644 blue F
+	METHOD <init> (Lnet/minecraft/class_18;DDDDDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xVelocity
+		ARG 10 yVelocity
+		ARG 12 zVelocity
+	METHOD method_2002 (Lnet/minecraft/class_67;FFFFFF)V
+		ARG 1 tessellator

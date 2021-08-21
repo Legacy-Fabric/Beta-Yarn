@@ -6,7 +6,7 @@ CLASS net/minecraft/class_15 net/minecraft/block/material/Material
 	FIELD field_1004 CAKE Lnet/minecraft/class_15;
 	FIELD field_971 COBWEB Lnet/minecraft/class_15;
 	FIELD field_972 PISTON Lnet/minecraft/class_15;
-	FIELD field_973 materialColour Lnet/minecraft/class_259;
+	FIELD field_973 materialColor Lnet/minecraft/class_259;
 	FIELD field_974 burnable Z
 	FIELD field_975 replaceable Z
 	FIELD field_976 opaque Z

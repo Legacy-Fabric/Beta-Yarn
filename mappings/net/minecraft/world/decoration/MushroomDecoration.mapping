@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_231 net/minecraft/world/decoration/MushroomDecoration
+	FIELD field_858 blockId I
+	METHOD <init> (I)V
+		ARG 1 blockId

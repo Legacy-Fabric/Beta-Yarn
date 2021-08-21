@@ -9,7 +9,7 @@ CLASS net/minecraft/class_117 net/minecraft/server/network/ClientConnection
 	FIELD field_1283 readStream Ljava/io/DataInputStream;
 	FIELD field_1284 writeStream Ljava/io/DataOutputStream;
 	FIELD field_1287 packetQueue Ljava/util/List;
-	FIELD field_1288 levelPacketQueue Ljava/util/List;
+	FIELD field_1288 worldPacketQueue Ljava/util/List;
 	FIELD field_1289 handler Lnet/minecraft/class_240;
 	FIELD field_1291 writeThread Ljava/lang/Thread;
 	FIELD field_1292 readThread Ljava/lang/Thread;

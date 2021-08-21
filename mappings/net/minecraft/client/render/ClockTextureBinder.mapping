@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_384 net/minecraft/client/render/ClockTextureBinder
-	FIELD field_1437 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_1437 client Lnet/minecraft/client/Minecraft;
 	FIELD field_1438 clockTexture [I
 	FIELD field_1439 dialTexture [I
 	FIELD field_1440 currentRotation D

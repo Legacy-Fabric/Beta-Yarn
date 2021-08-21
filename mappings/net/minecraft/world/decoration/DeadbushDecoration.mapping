@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_246 net/minecraft/world/decoration/DeadbushDecoration
+	FIELD field_911 blockId I
+	METHOD <init> (I)V
+		ARG 1 blockId

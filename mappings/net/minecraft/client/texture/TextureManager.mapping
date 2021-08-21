@@ -11,6 +11,8 @@ CLASS net/minecraft/class_76 net/minecraft/client/texture/TextureManager
 	FIELD field_1257 missingTexImage Ljava/awt/image/BufferedImage;
 	METHOD method_1084 tick ()V
 	METHOD method_1087 addTextureBinder (Lnet/minecraft/class_336;)V
+	METHOD method_1088 getTextureId (Ljava/awt/image/BufferedImage;)I
+		ARG 1 image
 	METHOD method_1089 bindImageToId (Ljava/awt/image/BufferedImage;I)V
 		COMMENT Binds the given buffered image to the given texture ID.
 		COMMENT @param imageToBind the buffered image instance.

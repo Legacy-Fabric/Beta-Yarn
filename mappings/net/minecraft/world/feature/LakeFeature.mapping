@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_624 net/minecraft/world/feature/LakeFeature
+	FIELD field_2697 blockId I
+	METHOD <init> (I)V
+		ARG 1 blockId

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_179 net/minecraft/world/storage/DebugInterface
+	COMMENT @see WorldFileFilter

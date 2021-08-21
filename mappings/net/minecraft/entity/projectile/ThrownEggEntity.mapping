@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_499 net/minecraft/entity/projectile/ThrownEggEntity
+	FIELD field_2038 shake I
+	FIELD field_2039 blockX I
+	FIELD field_2040 blockY I
+	FIELD field_2041 blockZ I
+	FIELD field_2042 inBlock I
+	FIELD field_2043 inGround Z
+	FIELD field_2044 thrower Lnet/minecraft/class_127;

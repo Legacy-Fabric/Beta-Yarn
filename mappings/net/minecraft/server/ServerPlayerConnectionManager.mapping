@@ -15,7 +15,7 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 	FIELD field_591 whitelisted Z
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
-	METHOD method_549 getViewRadiusInTiles ()I
+	METHOD method_549 getViewRadiusInBlocks ()I
 	METHOD method_550 (DDDDILnet/minecraft/class_169;)V
 		ARG 1 x
 		ARG 3 y
@@ -29,8 +29,16 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 		ARG 2 y
 		ARG 3 z
 		ARG 4 dimension
+	METHOD method_553 (IIILnet/minecraft/class_55;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockEntity
 	METHOD method_554 (Lnet/minecraft/class_69;)V
 		ARG 1 player
+	METHOD method_555 respawn (Lnet/minecraft/class_69;I)Lnet/minecraft/class_69;
+		ARG 1 player
+		ARG 2 dimensionId
 	METHOD method_556 sendPlayerTime (Lnet/minecraft/class_69;Lnet/minecraft/class_73;)V
 		ARG 1 serverPlayer
 		ARG 2 serverLevel
@@ -59,9 +67,13 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 	METHOD method_567 removeBan (Ljava/lang/String;)V
 		ARG 1 username
 	METHOD method_568 getAllPlayerNames ()Ljava/lang/String;
+	METHOD method_569 (Lnet/minecraft/class_69;)V
+		ARG 1 player
 	METHOD method_570 addIpBan (Ljava/lang/String;)V
 		ARG 1 ip
 	METHOD method_571 updateAllPlayers ()V
+	METHOD method_572 (Lnet/minecraft/class_69;)V
+		ARG 1 player
 	METHOD method_573 removeIpBan (Ljava/lang/String;)V
 		ARG 1 ip
 	METHOD method_574 getWhitelist ()Ljava/util/Set;

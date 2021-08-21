@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_239 net/minecraft/world/feature/Feature
+	COMMENT These can be used for both decorations and structures.
+	METHOD method_1142 generate (Lnet/minecraft/class_18;Ljava/util/Random;III)Z
+		ARG 1 world
+		ARG 2 rand
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+	METHOD method_1143 setScale (DDD)V
+		ARG 1 scaleY
+		ARG 3 scaleX
+		ARG 5 scaleZ

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_2 net/minecraft/entity/SwimmingEntity
+	COMMENT Swimmers have the ability to navigate in all directions in water.

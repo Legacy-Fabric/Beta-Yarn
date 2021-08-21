@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_563 net/minecraft/client/entity/particle/DiggingParticleEntity
+	FIELD field_2383 block Lnet/minecraft/class_17;
+	FIELD field_2384 blockMeta I
+	METHOD <init> (Lnet/minecraft/class_18;DDDDDDLnet/minecraft/class_17;II)V
+		ARG 1 world
+		ARG 14 block
+		ARG 15 blockMeta
+		ARG 16 meta
+	METHOD method_1856 multiplyColor (III)Lnet/minecraft/class_563;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

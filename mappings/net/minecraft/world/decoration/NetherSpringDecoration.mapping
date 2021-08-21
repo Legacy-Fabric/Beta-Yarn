@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_351 net/minecraft/world/decoration/NetherSpringDecoration
+	FIELD field_1313 blockId I
+	METHOD <init> (I)V
+		ARG 1 blockId

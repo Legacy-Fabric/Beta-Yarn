@@ -32,7 +32,7 @@ CLASS net/minecraft/class_322 net/minecraft/client/options/GameOptions
 	FIELD field_1476 fogKey Lnet/minecraft/class_386;
 	FIELD field_1477 sneakKey Lnet/minecraft/class_386;
 	FIELD field_1478 keyBindings [Lnet/minecraft/class_386;
-	FIELD field_1479 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_1479 client Lnet/minecraft/client/Minecraft;
 	FIELD field_1480 difficulty I
 	FIELD field_1481 hideHud Z
 	METHOD method_1224 load ()V
