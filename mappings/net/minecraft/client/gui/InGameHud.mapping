@@ -10,7 +10,7 @@ CLASS net/minecraft/class_588 net/minecraft/client/gui/InGameHud
 	FIELD field_2550 jukeboxMessageTime I
 	FIELD field_2551 isRecordPlaying Z
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
-		ARG 1 minecraft
+		ARG 1 client
 	METHOD method_1944 runTick ()V
 	METHOD method_1945 renderVingette (FII)V
 	METHOD method_1946 renderHud (FZII)V

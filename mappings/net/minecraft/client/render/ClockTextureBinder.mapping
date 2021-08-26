@@ -5,4 +5,4 @@ CLASS net/minecraft/class_384 net/minecraft/client/render/ClockTextureBinder
 	FIELD field_1440 currentRotation D
 	FIELD field_1441 rotationDelay D
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
-		ARG 1 minecraft
+		ARG 1 client

@@ -2,7 +2,7 @@ CLASS net/minecraft/class_40 net/minecraft/client/entity/player/AbstractClientPl
 	FIELD field_161 playerKeypressManager Lnet/minecraft/class_41;
 	FIELD field_162 client Lnet/minecraft/client/Minecraft;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_18;Lnet/minecraft/class_237;I)V
-		ARG 1 minecraft
+		ARG 1 client
 		ARG 2 world
 		ARG 3 session
 		ARG 4 dimensionId
