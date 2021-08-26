@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_35 net/minecraft/client/gui/ParticleRenderer
+CLASS net/minecraft/class_35 net/minecraft/client/render/ParticleRenderer
 	FIELD field_300 particleList Ljava/util/List;
 	FIELD field_301 client Lnet/minecraft/client/Minecraft;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V

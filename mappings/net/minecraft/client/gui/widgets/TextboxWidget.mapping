@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_181 net/minecraft/client/gui/widgets/Textbox
+CLASS net/minecraft/class_181 net/minecraft/client/gui/widgets/TextboxWidget
 	FIELD field_2420 selected Z
 	FIELD field_2421 enabled Z
 	FIELD field_2422 font Lnet/minecraft/class_34;

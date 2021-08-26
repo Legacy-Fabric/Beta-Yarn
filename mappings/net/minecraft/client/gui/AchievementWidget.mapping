@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_594 net/minecraft/client/gui/Achievement
+CLASS net/minecraft/class_594 net/minecraft/client/gui/AchievementWidget
 	FIELD field_2571 client Lnet/minecraft/client/Minecraft;
 	FIELD field_2572 scaledWidth I
 	FIELD field_2573 scaledHeight I
