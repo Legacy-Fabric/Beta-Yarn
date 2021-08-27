@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_596 net/minecraft/client/util/MouseHelper
+	COMMENT Holds helper functions for dealing with the mouse cursor and mouse input.
+	FIELD field_2586 xDelta I
+	FIELD field_2587 yDelta I
+	FIELD field_2588 inGameCursor Ljava/awt/Component;
+	FIELD field_2589 globalCursor Lorg/lwjgl/input/Cursor;
+	FIELD field_2590 unused I
+	METHOD <init> (Ljava/awt/Component;)V
+		ARG 1 inGameCursor
+	METHOD method_1970 grabCursor ()V
+	METHOD method_1971 ungrabCursor ()V
+	METHOD method_1972 setDelta ()V

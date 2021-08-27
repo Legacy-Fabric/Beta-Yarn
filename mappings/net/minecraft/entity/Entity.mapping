@@ -25,6 +25,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1620 chunkIndex I
 	FIELD field_1621 chunkZ I
 	FIELD field_1623 onGround Z
+	FIELD field_1627 attacked Z
 	FIELD field_1628 inCobweb Z
 	FIELD field_1630 removed Z
 	FIELD field_1631 standingEyeHeight F
@@ -35,7 +36,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	FIELD field_1638 prevRenderY D
 	FIELD field_1639 prevRenderZ D
 	FIELD field_1644 rand Ljava/util/Random;
-	FIELD field_1647 fire I
+	FIELD field_1647 fireTicks I
 	FIELD field_1652 skinUrl Ljava/lang/String;
 	FIELD field_1653 capeUrl Ljava/lang/String;
 	FIELD field_1654 clientX I
@@ -85,6 +86,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 1 values
 	METHOD method_1331 getDataTracker ()Lnet/minecraft/class_216;
 	METHOD method_1333 isTouchingWater ()Z
+	METHOD method_1336 setAttacked ()V
 	METHOD method_1337 getStringId ()Ljava/lang/String;
 	METHOD method_1339 dropItem (II)Lnet/minecraft/class_142;
 		ARG 1 id
@@ -99,6 +101,8 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 	METHOD method_1342 setRotation (FF)V
 	METHOD method_1343 (Lnet/minecraft/class_8;)Z
 		ARG 1 nbt
+	METHOD method_1345 isFlagSet (I)Z
+		ARG 1 shift
 	METHOD method_1346 writeNBT (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1347 squaredDistanceTo (DDD)D
@@ -119,6 +123,7 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 2 amount
 	METHOD method_1357 getMountedHeightOffset ()D
 	METHOD method_1358 canClimb ()Z
+	METHOD method_1359 isOnFire ()Z
 	METHOD method_1363 readAdditional (Lnet/minecraft/class_8;)V
 		ARG 1 nbt
 	METHOD method_1364 shouldRenderAtDistance (D)Z

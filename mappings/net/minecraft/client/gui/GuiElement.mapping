@@ -1,4 +1,5 @@
-CLASS net/minecraft/class_584 net/minecraft/client/gui/DrawableHelper
+CLASS net/minecraft/class_584 net/minecraft/client/gui/GuiElement
+	COMMENT An element of the graphical user interface.
 	FIELD field_2522 zOffset F
 	METHOD method_1931 drawLineHorizontal (IIII)V
 		ARG 1 x1

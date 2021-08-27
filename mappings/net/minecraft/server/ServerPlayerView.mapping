@@ -1,22 +1,31 @@
 CLASS net/minecraft/class_167 net/minecraft/server/ServerPlayerView
 	FIELD field_2132 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_2133 worldIndex I
 	FIELD field_2134 viewRadius I
 	FIELD field_2135 directions [[I
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;II)V
 		ARG 1 server
+		ARG 2 worldIndex
 		ARG 3 viewRadius
+	METHOD method_1741 getWorld ()Lnet/minecraft/class_73;
 	METHOD method_1745 (Lnet/minecraft/class_69;)V
-		ARG 1 serverPlayer
+		ARG 1 player
 	METHOD method_1748 addPlayer (Lnet/minecraft/class_69;)V
-		ARG 1 serverPlayer
+		ARG 1 player
 	METHOD method_1750 getViewRadiusInBlocks ()I
 	METHOD method_1751 (Lnet/minecraft/class_69;)V
-		ARG 1 serverPlayer
+		ARG 1 player
 	CLASS class_514
-		FIELD field_2137 serverPlayers Ljava/util/List;
+		FIELD field_2137 players Ljava/util/List;
+		FIELD field_2140 chunkPos Lnet/minecraft/class_515;
+		METHOD <init> (Lnet/minecraft/class_167;II)V
+			ARG 2 chunkX
+			ARG 3 chunkY
 		METHOD method_1754 addServerPlayer (Lnet/minecraft/class_69;)V
-			ARG 1 serverPlayer
+			ARG 1 player
 		METHOD method_1755 (Lnet/minecraft/class_169;)V
 			ARG 1 packet
+		METHOD method_1756 (Lnet/minecraft/class_55;)V
+			ARG 1 blockEntity
 		METHOD method_1757 removeServerPlayer (Lnet/minecraft/class_69;)V
-			ARG 1 serverPlayer
+			ARG 1 player

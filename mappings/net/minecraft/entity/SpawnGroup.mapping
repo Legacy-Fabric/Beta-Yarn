@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_238 net/minecraft/entity/SpawnGroup
+	FIELD field_945 baseClass Ljava/lang/Class;
+		COMMENT The class that all entities in this group extend from (or implement).
+	FIELD field_946 spawnCap I
+		COMMENT The amount of entities from this group allowed to spawn within range
+		COMMENT of the player at any given time.
+	FIELD field_947 spawnInMaterial Lnet/minecraft/class_15;
+		COMMENT The matieral of blocks this group's entities are allowed to spawn in.
+	FIELD field_948 peaceful Z
+		COMMENT Whether the entities in this group are allowed to spawn in Peaceful difficulty.
+	METHOD <init> (Ljava/lang/String;ILjava/lang/Class;ILnet/minecraft/class_15;Z)V
+		ARG 3 baseClass
+		ARG 4 spawnCap
+		ARG 5 spawnsIn
+		ARG 6 peaceful
+	METHOD method_853 getBaseClass ()Ljava/lang/Class;
+	METHOD method_854 getSpawnCap ()I
+	METHOD method_855 getSpawnInMaterial ()Lnet/minecraft/class_15;
+	METHOD method_856 isPeaceful ()Z

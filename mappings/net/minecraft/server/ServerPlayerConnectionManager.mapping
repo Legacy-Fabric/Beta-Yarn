@@ -40,8 +40,8 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 		ARG 1 player
 		ARG 2 dimensionId
 	METHOD method_556 sendPlayerTime (Lnet/minecraft/class_69;Lnet/minecraft/class_73;)V
-		ARG 1 serverPlayer
-		ARG 2 serverLevel
+		ARG 1 player
+		ARG 2 world
 	METHOD method_557 connectPlayer (Lnet/minecraft/class_10;Ljava/lang/String;)Lnet/minecraft/class_69;
 		ARG 1 connect
 		ARG 2 name
@@ -83,12 +83,12 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 		ARG 1 username
 	METHOD method_577 doLoadWhitelist ()V
 	METHOD method_578 sendToOppositeDimension (Lnet/minecraft/class_69;)V
-		ARG 1 serverPlayer
+		ARG 1 player
 	METHOD method_579 removeOp (Ljava/lang/String;)V
 		ARG 1 username
 	METHOD method_580 loadBanList ()V
 	METHOD method_581 (Lnet/minecraft/class_69;)V
-		ARG 1 serverPlayer
+		ARG 1 player
 	METHOD method_582 cannotJoin (Ljava/lang/String;)Z
 		ARG 1 username
 	METHOD method_583 saveBanList ()V

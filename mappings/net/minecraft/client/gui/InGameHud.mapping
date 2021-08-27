@@ -19,7 +19,7 @@ CLASS net/minecraft/class_588 net/minecraft/client/gui/InGameHud
 		ARG 3 width
 		ARG 4 height
 	METHOD method_1947 renderPumpkinOverlay (II)V
-	METHOD method_1948 renderHotbarSlot (IIIF)V
+	METHOD method_1948 renderHotBarSlot (IIIF)V
 	METHOD method_1949 addChatMessage (Ljava/lang/String;)V
 	METHOD method_1950 clearChat ()V
 	METHOD method_1951 renderPortalOverlay (FII)V

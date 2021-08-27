@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_567 net/minecraft/sortme/WorldMonsterSpawner
+CLASS net/minecraft/class_567 net/minecraft/world/WorldMonsterSpawner
 	METHOD method_1868 (Lnet/minecraft/class_18;II)Lnet/minecraft/class_339;
 		ARG 0 world
 	METHOD method_1870 (Lnet/minecraft/class_18;ZZ)I

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_556 net/minecraft/client/render/HandItemRenderer
+CLASS net/minecraft/class_556 net/minecraft/client/render/HeldItemRenderer
 	FIELD field_2401 client Lnet/minecraft/client/Minecraft;
 	FIELD field_2402 heldItem Lnet/minecraft/class_31;
 	FIELD field_2405 blockRenderer Lnet/minecraft/class_13;
