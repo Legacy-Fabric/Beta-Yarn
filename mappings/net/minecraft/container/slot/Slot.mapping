@@ -2,7 +2,7 @@ CLASS net/minecraft/class_133 net/minecraft/container/slot/Slot
 	FIELD field_499 id I
 	FIELD field_500 x I
 	FIELD field_501 y I
-	FIELD field_502 invSlot I
+	FIELD field_502 index I
 	FIELD field_503 inventory Lnet/minecraft/class_134;
 	METHOD <init> (Lnet/minecraft/class_134;III)V
 		ARG 1 inventory

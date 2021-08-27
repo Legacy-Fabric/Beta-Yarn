@@ -12,6 +12,6 @@ CLASS net/minecraft/class_87 net/minecraft/client/render/entity/model/BipedEntit
 	FIELD field_629 swingingRight Z
 	FIELD field_630 sneaking Z
 	METHOD method_605 renderEars (F)V
-		ARG 1 tickDelta
+		ARG 1 delta
 	METHOD method_606 renderCape (F)V
-		ARG 1 tickDelta
+		ARG 1 delta

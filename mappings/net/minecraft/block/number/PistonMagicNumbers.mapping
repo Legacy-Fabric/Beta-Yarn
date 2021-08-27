@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_505 net/minecraft/block/number/PistonMagicNumbers
+	FIELD field_2106 sidesByRotation [I
+	FIELD field_2107 xOffsets [I
+	FIELD field_2108 yOffsets [I
+	FIELD field_2109 zOffsets [I

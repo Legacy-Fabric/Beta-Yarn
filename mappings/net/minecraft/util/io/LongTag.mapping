@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_273 net/minecraft/util/io/LongTag
+	COMMENT A type of tag that stores a single unsigned long value.
 	FIELD field_1122 data J
 	METHOD <init> (J)V
 		ARG 1 value

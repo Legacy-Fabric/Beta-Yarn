@@ -1,19 +1,23 @@
 CLASS net/minecraft/class_187 net/minecraft/util/io/AbstractTag
+	COMMENT A type of Named Binary Tag (or just "tag" for short)
+	COMMENT which can be overriden for each data type that needs to be serialized.
 	FIELD field_660 type Ljava/lang/String;
-	METHOD method_629 getId ()B
-	METHOD method_623 getTagFromId (B)Lnet/minecraft/class_187;
+	METHOD method_623 getTypeFromId (B)Lnet/minecraft/class_187;
+		COMMENT This should return a generic type extending from AbstractTag,
+		COMMENT but :mojank:.
 		ARG 0 id
 	METHOD method_624 writeTag (Lnet/minecraft/class_187;Ljava/io/DataOutput;)V
 		ARG 0 tag
 		ARG 1 out
+	METHOD method_625 setType (Ljava/lang/String;)Lnet/minecraft/class_187;
+		ARG 1 type
+	METHOD method_626 getType ()Ljava/lang/String;
+	METHOD method_627 getTypeById (B)Ljava/lang/String;
+		ARG 0 id
+	METHOD method_628 readTag (Ljava/io/DataInput;)Lnet/minecraft/class_187;
+		ARG 0 in
+	METHOD method_629 getId ()B
 	METHOD method_630 read (Ljava/io/DataInput;)V
 		ARG 1 in
 	METHOD method_631 write (Ljava/io/DataOutput;)V
 		ARG 1 out
-	METHOD method_625 setType (Ljava/lang/String;)Lnet/minecraft/class_187;
-		ARG 1 type
-	METHOD method_626 getType ()Ljava/lang/String;
-	METHOD method_627 getTagTypeById (B)Ljava/lang/String;
-		ARG 0 id
-	METHOD method_628 readTag (Ljava/io/DataInput;)Lnet/minecraft/class_187;
-		ARG 0 in

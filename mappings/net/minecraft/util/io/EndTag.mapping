@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_253 net/minecraft/util/io/EndTag
+	COMMENT A type of tag that signifies the end of a {@link CompountTag} sequence.

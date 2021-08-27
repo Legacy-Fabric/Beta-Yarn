@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_83 net/minecraft/util/io/TagInputOutput
+	COMMENT Facilitates reading and writing of Named Binary Tags
+	COMMENT to {@link OutputStream}s and {@link DataOutput}s
+	COMMENT and from {@link InputStream}s and {@link DataInput}.
+	METHOD method_335 writeNBT (Lnet/minecraft/class_8;Ljava/io/DataOutput;)V
+		ARG 0 nbt
+		ARG 1 output
+	METHOD method_336 writeNBT (Lnet/minecraft/class_8;Ljava/io/OutputStream;)V
+		ARG 0 nbt
+		ARG 1 output
+	METHOD method_337 readNBT (Ljava/io/DataInput;)Lnet/minecraft/class_8;
+		ARG 0 input
+	METHOD method_338 readNBT (Ljava/io/InputStream;)Lnet/minecraft/class_8;
+		ARG 0 input

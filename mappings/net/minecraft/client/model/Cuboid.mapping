@@ -17,7 +17,7 @@ CLASS net/minecraft/class_163 net/minecraft/client/model/Cuboid
 		ARG 1 u
 		ARG 2 v
 	METHOD method_1815 render (F)V
-		ARG 1 tickDelta
+		ARG 1 delta
 	METHOD method_1816 setRotationPoint (FFF)V
 	METHOD method_1821 bake (F)V
-		ARG 1 tickDelta
+		ARG 1 delta

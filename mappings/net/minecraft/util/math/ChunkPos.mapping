@@ -1,4 +1,6 @@
-CLASS net/minecraft/class_515 net/minecraft/util/math/Vec2i
+CLASS net/minecraft/class_515 net/minecraft/util/math/ChunkPos
+	COMMENT A type that stores two integers (x and y) which represents
+	COMMENT the location of a chunk in the world.
 	FIELD field_2378 x I
 	FIELD field_2379 z I
 	METHOD <init> (II)V

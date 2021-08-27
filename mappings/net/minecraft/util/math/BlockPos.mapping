@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_339 net/minecraft/util/math/BlockPos
+	COMMENT A type that stores three integers (x, y, and z) which represents
+	COMMENT the location of a block relative to the world.
 	FIELD field_2100 x I
 	FIELD field_2101 y I
 	FIELD field_2102 z I

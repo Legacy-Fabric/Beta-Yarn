@@ -7,7 +7,8 @@ CLASS net/minecraft/class_55 net/minecraft/entity/BlockEntity
 	FIELD field_1241 z I
 	FIELD field_1242 invalid Z
 	METHOD method_1067 register (Ljava/lang/Class;Ljava/lang/String;)V
-	METHOD method_1068 blockEntityFromNBT (Lnet/minecraft/class_8;)Lnet/minecraft/class_55;
+	METHOD method_1068 ofNBT (Lnet/minecraft/class_8;)Lnet/minecraft/class_55;
+		ARG 0 nbt
 	METHOD method_1069 getCachedId ()I
 	METHOD method_1070 getPacketContents ()Lnet/minecraft/class_169;
 	METHOD method_1071 isInvalid ()Z
@@ -15,8 +16,8 @@ CLASS net/minecraft/class_55 net/minecraft/entity/BlockEntity
 	METHOD method_1073 validate ()V
 	METHOD method_1075 getBlock ()Lnet/minecraft/class_17;
 	METHOD method_1076 tick ()V
-	METHOD method_1077 readIdentifyingData (Lnet/minecraft/class_8;)V
-		ARG 1 tag
-	METHOD method_1078 writeIdentifyingData (Lnet/minecraft/class_8;)V
-		ARG 1 tag
+	METHOD method_1077 readNBT (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_1078 writeNBT (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
 	METHOD method_947 markDirty ()V

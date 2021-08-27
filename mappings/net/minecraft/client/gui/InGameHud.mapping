@@ -13,7 +13,11 @@ CLASS net/minecraft/class_588 net/minecraft/client/gui/InGameHud
 		ARG 1 client
 	METHOD method_1944 runTick ()V
 	METHOD method_1945 renderVingette (FII)V
-	METHOD method_1946 renderHud (FZII)V
+	METHOD method_1946 render (FZII)V
+		ARG 1 delta
+		ARG 2 active
+		ARG 3 width
+		ARG 4 height
 	METHOD method_1947 renderPumpkinOverlay (II)V
 	METHOD method_1948 renderHotbarSlot (IIIF)V
 	METHOD method_1949 addChatMessage (Ljava/lang/String;)V

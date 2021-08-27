@@ -1,6 +1,11 @@
 CLASS net/minecraft/class_469 net/minecraft/block/MovingPiston
 	METHOD <init> (I)V
 		ARG 1 id
+	METHOD method_1533 createEntity (IIIZZ)Lnet/minecraft/class_55;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+		ARG 3 extended
 	METHOD method_1534 (Lnet/minecraft/class_18;IIIIFI)Lnet/minecraft/class_25;
 		ARG 2 x
 		ARG 3 y

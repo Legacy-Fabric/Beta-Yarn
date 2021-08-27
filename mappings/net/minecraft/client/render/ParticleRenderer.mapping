@@ -5,4 +5,4 @@ CLASS net/minecraft/class_35 net/minecraft/client/render/ParticleRenderer
 		ARG 1 client
 	METHOD method_351 render ()V
 	METHOD method_352 render (F)V
-		ARG 1 tickDelta
+		ARG 1 delta

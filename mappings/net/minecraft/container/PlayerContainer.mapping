@@ -8,5 +8,5 @@ CLASS net/minecraft/class_277 net/minecraft/container/PlayerContainer
 		ARG 1 playerInventory
 		ARG 2 local
 	CLASS 1
-		FIELD field_1127 armourSlot I
+		FIELD field_1127 armorSlot I
 		FIELD field_1128 playerContainer Lnet/minecraft/class_277;
