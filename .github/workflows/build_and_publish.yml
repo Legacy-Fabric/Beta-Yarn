@@ -2,6 +2,15 @@ name: Publish
 
 on:
   workflow_dispatch:
+    inputs:
+      maven_username:
+        required: true
+        description: 'Your blucobalt.dev Maven username.'
+        default: 'halotroop2288'
+      maven_password:
+        required: true
+        description: 'Your blucobalt.dev Maven password'
+        default: ''
 
 jobs:
   build_and_publish:
@@ -19,6 +28,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
       - name: Publish to Maven
-        run: ./gradlew publish --stacktrace
+        run: ./gradlew publish
         env:
           MAVEN_PUBLISH_TOKEN: ${{ secrets.TOKEN }}
+          maven_username: ${{ github.input.event.maven_username }}
+          maven_password: ${{ github.input.event.maven_password }}
