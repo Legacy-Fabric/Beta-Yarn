@@ -27,9 +27,16 @@ jobs:
         uses: gradle-update/update-gradle-wrapper-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+      - name: Build Number Generator
+        uses: einaregilsson/build-number@v3
+        with:
+          token: ${{ secrets.TOKEN }}
+
       - name: Publish to Maven
         run: ./gradlew publish
         env:
           MAVEN_PUBLISH_TOKEN: ${{ secrets.TOKEN }}
-          maven_username: ${{ github.input.event.maven_username }}
-          maven_password: ${{ github.input.event.maven_password }}
+          BUILD_NUMBER: ${{ $BUILD_NUMBER }}
+          MAVEN_USERNAME: ${{ github.input.event.maven_username }}
+          MAVEN_PASSWORD: ${{ github.input.event.maven_password }}
