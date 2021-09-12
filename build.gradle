@@ -462,12 +462,12 @@ publishing {
 		}
 	}
 	repositories {
-		if (System.getenv().MAVEN_PUBLISH_TOKEN) {
+		if (ENV.GITHUB_ACTIONS) {
 			maven {
 				url 'https://repo.blucobalt.dev/repository/maven-halotroop/'
 				credentials {
-					username 'halotroop2288'
-					password System.getenv().MAVEN_PUBLISH_TOKEN
+					username ENV.MAVEN_USERNAME
+					password ENV.MAVEN_PASSWORD
 				}
 				authentication {
 					basic(BasicAuthentication)
