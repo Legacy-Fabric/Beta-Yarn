@@ -462,15 +462,19 @@ publishing {
 		}
 	}
 	repositories {
-		maven {
-			url "https://repo.blucobalt.dev/repository/maven-halotroop/"
-			credentials {
-				username project.hasProperty('maven_username') ? project.property('maven_username') as String : ""
-				password project.hasProperty('maven_password') ? project.property('maven_password') as String : ""
+		if (System.getenv().MAVEN_PUBLISH_TOKEN) {
+			maven {
+				url 'https://repo.blucobalt.dev/repository/maven-halotroop/'
+				credentials {
+					username 'halotroop2288'
+					password System.getenv().MAVEN_PUBLISH_TOKEN
+				}
+				authentication {
+					basic(BasicAuthentication)
+				}
 			}
-			authentication {
-				basic(BasicAuthentication)
-			}
+		} else {
+			mavenLocal()
 		}
 	}
 }

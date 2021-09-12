@@ -145,7 +145,9 @@ CLASS net/minecraft/class_57 net/minecraft/entity/Entity
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1375 setWorld (Lnet/minecraft/class_18;)V
+		ARG 1 world
 	METHOD method_1376 startRiding (Lnet/minecraft/class_57;)V
+	METHOD method_1377 getShownItems ()[Lnet/minecraft/class_31;
 	METHOD method_1378 getStandingEyeHeight ()F
 	METHOD method_1379 getBoundingBox (Lnet/minecraft/class_57;)Lnet/minecraft/class_25;
 		ARG 1 entity

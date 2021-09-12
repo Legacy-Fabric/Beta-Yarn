@@ -15,6 +15,8 @@ CLASS net/minecraft/class_504 net/minecraft/client/ClientInteractionManager
 	METHOD method_1709 closeContainer (ILnet/minecraft/class_54;)V
 		ARG 1 syncId
 		ARG 2 player
+	METHOD method_1710 (Lnet/minecraft/class_18;)V
+		ARG 1 world
 	METHOD method_1711 rotatePlayer (Lnet/minecraft/class_54;)V
 		ARG 1 player
 	METHOD method_1713 useItemOnBlock (Lnet/minecraft/class_54;Lnet/minecraft/class_18;Lnet/minecraft/class_31;IIII)Z
