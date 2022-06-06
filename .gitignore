@@ -11,3 +11,4 @@ out/
 *.ipr
 *.jar
 *.check
+.project
