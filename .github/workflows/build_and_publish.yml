@@ -37,6 +37,6 @@ jobs:
         run: ./gradlew publish
         env:
           MAVEN_PUBLISH_TOKEN: ${{ secrets.TOKEN }}
-          BUILD_NUMBER: ${{ $BUILD_NUMBER }}
+          BUILD_NUMBER: ${{ steps.buildnumber.outputs.build_number }}
           MAVEN_USERNAME: ${{ github.input.event.maven_username }}
           MAVEN_PASSWORD: ${{ github.input.event.maven_password }}
