@@ -1,4 +1,15 @@
 CLASS net/minecraft/class_245 net/minecraft/client/render/entity/LivingEntityRenderer
 	FIELD field_910 model Lnet/minecraft/class_173;
 	METHOD method_815 setModel (Lnet/minecraft/class_173;)V
+	METHOD method_821 (Lnet/minecraft/class_127;DDD)V
+		ARG 1 player
+	METHOD method_823 (Lnet/minecraft/class_127;F)V
+		ARG 1 player
+	METHOD method_824 (Lnet/minecraft/class_127;FFF)V
+		ARG 1 entity
 	METHOD method_825 render (Lnet/minecraft/class_127;IF)Z
+		ARG 1 player
+	METHOD method_826 (Lnet/minecraft/class_127;DDD)V
+		ARG 1 entity
+	METHOD method_827 (Lnet/minecraft/class_127;F)V
+		ARG 1 player
