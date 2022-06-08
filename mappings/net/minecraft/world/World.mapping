@@ -78,9 +78,12 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_174 getCount (Ljava/lang/Class;)I
 		ARG 1 entityClass
 	METHOD method_175 getEntities (Ljava/lang/Class;Lnet/minecraft/class_25;)Ljava/util/List;
+	METHOD method_176 getMap (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
 	METHOD method_177 getPlayerByName (Ljava/lang/String;)Lnet/minecraft/class_54;
 		ARG 1 name
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
+	METHOD method_180 (Ljava/lang/String;Lnet/minecraft/class_58;)V
+		ARG 2 map
 	METHOD method_182 addEntities (Ljava/util/List;)V
 		ARG 1 newEntities
 	METHOD method_183 addWorldListener (Lnet/minecraft/class_59;)V

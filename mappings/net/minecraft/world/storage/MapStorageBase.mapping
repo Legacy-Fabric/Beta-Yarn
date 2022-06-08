@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_58 net/minecraft/world/storage/MapStorageBase
-	METHOD method_545 readNBT (Lnet/minecraft/class_8;)V
-		ARG 1 nbt
-	METHOD method_548 writeNBT (Lnet/minecraft/class_8;)V
-		ARG 1 nbt

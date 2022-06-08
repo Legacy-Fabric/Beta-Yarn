@@ -116,8 +116,13 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	FIELD field_490 DIAMOND_SHOVEL Lnet/minecraft/class_124;
 	FIELD field_491 DIAMOND_PICKAXE Lnet/minecraft/class_124;
 	METHOD <init> (I)V
-		ARG 1 id
+		ARG 1 itemId
 	METHOD method_437 postMine (Lnet/minecraft/class_31;IIIILnet/minecraft/class_127;)Z
+		ARG 1 stack
+		ARG 2 blockId
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
 		ARG 6 damageTarget
 	METHOD method_438 getStrengthOnBlock (Lnet/minecraft/class_31;Lnet/minecraft/class_17;)F
 		ARG 1 item

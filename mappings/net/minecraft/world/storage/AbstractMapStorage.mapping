@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_58 net/minecraft/world/storage/AbstractMapStorage
+	FIELD field_574 name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD method_545 readNBT (Lnet/minecraft/class_8;)V
+		ARG 1 nbt
+	METHOD method_548 writeNBT (Lnet/minecraft/class_8;)V
+		ARG 1 nbt

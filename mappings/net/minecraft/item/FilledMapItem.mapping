@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_125 net/minecraft/item/FilledMapItem
+	METHOD method_1729 (Lnet/minecraft/class_18;Lnet/minecraft/class_57;Lnet/minecraft/class_198;)V
+		ARG 1 world
+		ARG 2 entity
+		ARG 3 mapStorage
+	METHOD method_1730 getStorage (Lnet/minecraft/class_31;Lnet/minecraft/class_18;)Lnet/minecraft/class_198;
+		ARG 1 stack
+		ARG 2 world
+	METHOD method_1731 getOrCreateMap (SLnet/minecraft/class_18;)Lnet/minecraft/class_198;
+		ARG 0 mapId
+		ARG 1 world
