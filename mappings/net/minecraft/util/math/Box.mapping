@@ -5,8 +5,8 @@ CLASS net/minecraft/class_25 net/minecraft/util/math/Box
 	FIELD field_132 maxX D
 	FIELD field_133 maxY D
 	FIELD field_134 maxZ D
-	FIELD field_135 uselessWasteOfMemory Ljava/util/List;
-	FIELD field_136 thisIsAlwaysZero I
+	FIELD field_135 boxList Ljava/util/List;
+	FIELD field_136 listIndex I
 	METHOD <init> (DDDDDD)V
 		ARG 1 minX
 		ARG 3 minY
@@ -19,6 +19,11 @@ CLASS net/minecraft/class_25 net/minecraft/util/math/Box
 		ARG 3 y
 		ARG 5 z
 	METHOD method_106 averageDimension ()D
+	METHOD method_86 duplicateAndExpand (DDD)Lnet/minecraft/class_25;
+		COMMENT @return a new {@link Box} expanded relative to this box's size
+		ARG 1 width
+		ARG 3 height
+		ARG 5 depth
 	METHOD method_87 create (DDDDDD)Lnet/minecraft/class_25;
 		ARG 0 minX
 		ARG 2 minY
@@ -26,11 +31,29 @@ CLASS net/minecraft/class_25 net/minecraft/util/math/Box
 		ARG 6 maxX
 		ARG 8 maxY
 		ARG 10 maxZ
-	METHOD method_90 boxIntersects (Lnet/minecraft/class_25;)Z
+	METHOD method_88 contains (Lnet/minecraft/class_26;)Z
+		ARG 1 point
+	METHOD method_90 intersects (Lnet/minecraft/class_25;)Z
+		ARG 1 other
+	METHOD method_91 (Lnet/minecraft/class_25;D)D
+		ARG 1 other
 	METHOD method_93 expand (DDD)Lnet/minecraft/class_25;
-	METHOD method_94 createButWasteMemory (DDDDDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_94 createAndAddToList (DDDDDD)Lnet/minecraft/class_25;
+		ARG 0 minX
+		ARG 2 minY
+		ARG 4 minZ
+		ARG 6 maxX
+		ARG 8 maxY
+		ARG 10 maxZ
 	METHOD method_96 copy (Lnet/minecraft/class_25;)V
 		ARG 1 other
+	METHOD method_98 duplicateAndTranslate (DDD)Lnet/minecraft/class_25;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD method_99 setAllCoords (DDDDDD)Lnet/minecraft/class_25;
 		ARG 1 minX
 		ARG 3 minY
