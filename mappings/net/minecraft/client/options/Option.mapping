@@ -1,4 +1,17 @@
 CLASS net/minecraft/class_271 net/minecraft/client/options/Option
+	FIELD field_1097 MUSIC_VOLUME Lnet/minecraft/class_271;
+	FIELD field_1098 SOUND_VOLUME Lnet/minecraft/class_271;
+	FIELD field_1099 INVERT_MOUSE Lnet/minecraft/class_271;
+	FIELD field_1100 SENSITIVITY Lnet/minecraft/class_271;
+	FIELD field_1101 RENDER_DISTANCE Lnet/minecraft/class_271;
+	FIELD field_1102 VIEW_BOBBING Lnet/minecraft/class_271;
+	FIELD field_1103 ANAGLYPH Lnet/minecraft/class_271;
+	FIELD field_1104 ADVANCED_OPENGL Lnet/minecraft/class_271;
+	FIELD field_1105 LIMIT_FRAMERATE Lnet/minecraft/class_271;
+	FIELD field_1106 GLOBAL_DIFFICULTY Lnet/minecraft/class_271;
+	FIELD field_1107 GRAPHICS_QUALITY Lnet/minecraft/class_271;
+	FIELD field_1108 SMOOTH_LIGHTING Lnet/minecraft/class_271;
+	FIELD field_1109 GUI_SCALE Lnet/minecraft/class_271;
 	FIELD field_1110 slider Z
 	FIELD field_1111 toggle Z
 	FIELD field_1112 translationKey Ljava/lang/String;
