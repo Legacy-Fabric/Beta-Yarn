@@ -3,14 +3,16 @@ CLASS net/minecraft/class_322 net/minecraft/client/options/GameOptions
 	FIELD field_1443 debugHud Z
 	FIELD field_1444 lastServer Ljava/lang/String;
 	FIELD field_1446 cinematicMode Z
+	FIELD field_1447 alwaysFalse Z
+		COMMENT This field appears to never be modified in vanilla. It is called in {@link net.minecraft.client.render.GameRenderer}
 	FIELD field_1450 guiScale I
 	FIELD field_1451 renderDistanceTranslationKeys [Ljava/lang/String;
 	FIELD field_1452 difficultyTranslationKeys [Ljava/lang/String;
 	FIELD field_1453 guiScaleTranslationKeys [Ljava/lang/String;
 	FIELD field_1454 performanceTranslationKeys [Ljava/lang/String;
 	FIELD field_1455 optionsFile Ljava/io/File;
-	FIELD field_1456 music F
-	FIELD field_1457 sound F
+	FIELD field_1456 musicVolume F
+	FIELD field_1457 soundVolume F
 	FIELD field_1458 mouseSensitivity F
 	FIELD field_1459 invertYMouse Z
 	FIELD field_1460 viewDistance I
@@ -35,13 +37,20 @@ CLASS net/minecraft/class_322 net/minecraft/client/options/GameOptions
 	FIELD field_1479 client Lnet/minecraft/client/Minecraft;
 	FIELD field_1480 difficulty I
 	FIELD field_1481 hideHud Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
+		ARG 1 client
+		ARG 2 gameDirectory
 	METHOD method_1224 load ()V
 	METHOD method_1225 getKeybindName (I)Ljava/lang/String;
 		ARG 1 index
 	METHOD method_1226 setControl (II)V
 	METHOD method_1227 getFloatValue (Lnet/minecraft/class_271;)F
-	METHOD method_1229 changeOption (Lnet/minecraft/class_271;I)V
+	METHOD method_1228 setFloatOption (Lnet/minecraft/class_271;F)V
 		ARG 1 option
+		ARG 2 value
+	METHOD method_1229 setIntOption (Lnet/minecraft/class_271;I)V
+		ARG 1 option
+		ARG 2 value
 	METHOD method_1230 parseFloat (Ljava/lang/String;)F
 		ARG 1 str
 	METHOD method_1231 saveOptions ()V
