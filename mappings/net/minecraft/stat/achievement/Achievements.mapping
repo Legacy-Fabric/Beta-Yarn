@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_23 net/minecraft/achievement/Achievements
+CLASS net/minecraft/class_23 net/minecraft/stat/achievement/Achievements
 	FIELD field_108 displayMinColumn I
 	FIELD field_109 displayMinRow I
 	FIELD field_110 displayMaxColumn I
