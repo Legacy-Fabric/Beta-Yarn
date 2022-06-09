@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_53 net/minecraft/world/MapTracker
+	FIELD field_550 dimensionData Lnet/minecraft/class_52;
+	FIELD field_551 mapNames Ljava/util/Map;
+	FIELD field_552 maps Ljava/util/List;
+	METHOD <init> (Lnet/minecraft/class_52;)V
+		ARG 1 dimensionData
+	METHOD method_524 (Lnet/minecraft/class_58;)V
+		ARG 1 map
+	METHOD method_525 createMapUnsafelyAndRegister (Ljava/lang/Class;Ljava/lang/String;)Lnet/minecraft/class_58;
+		COMMENT Uses reflection to instantiate a new MapStorage instance of the class provided,
+		COMMENT then adds it to the tracker.
+		ARG 1 mapStorageClass
+		ARG 2 mapName
+	METHOD method_527 registerMap (Ljava/lang/String;Lnet/minecraft/class_58;)V
+		ARG 1 mapName
+		ARG 2 map

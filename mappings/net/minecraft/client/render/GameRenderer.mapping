@@ -2,6 +2,10 @@ CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
 	FIELD field_2349 client Lnet/minecraft/client/Minecraft;
 	FIELD field_2353 cinematicPitchSmoother Lnet/minecraft/class_12;
 	FIELD field_2354 cinematicYawSmoother Lnet/minecraft/class_12;
-	METHOD method_1841 delta (FJ)V
+	METHOD method_1841 (FJ)V
+		ARG 1 delta
 	METHOD method_1844 (F)V
+		ARG 1 delta
+	METHOD method_1846 updateRain ()V
+	METHOD method_1851 (F)V
 		ARG 1 delta

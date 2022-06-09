@@ -59,6 +59,7 @@ CLASS net/minecraft/client/Minecraft
 	FIELD field_2824 options Lnet/minecraft/class_322;
 	METHOD <init> (Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
 		ARG 1 unused
+		ARG 2 canvas
 		ARG 3 applet
 		ARG 4 width
 		ARG 5 height
