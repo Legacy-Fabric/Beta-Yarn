@@ -744,11 +744,14 @@ publishing {
 	repositories {
 		if (ENV.MAVEN_URL) {
 			maven {
-				name 'publisher-maven'
+				//name 'publisher-maven'
 				url ENV.MAVEN_URL
 				credentials {
 					username ENV.MAVEN_USERNAME
 					password ENV.MAVEN_PASSWORD
+				}
+				authentication {
+					basic(BasicAuthentication)
 				}
 			}
 		}
