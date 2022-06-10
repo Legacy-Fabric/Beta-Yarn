@@ -6,7 +6,7 @@ on:
       maven_url: 
         required: true
         description: 'Maven URL'
-        default: 'https://repo.blucobalt.dev/repositories/maven-halotroop'
+        default: 'https://repo.blucobalt.dev/repository/maven-halotroop'
       maven_username:
         required: true
         description: 'Your maven username.'
