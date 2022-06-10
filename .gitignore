@@ -1,7 +1,4 @@
 .gradle/
-*-merged.jar
-*-mapped.jar
-*-intermediary.jar
 *.DS_Store
 build/
 out/
@@ -12,3 +9,5 @@ out/
 *.jar
 *.check
 .project
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
