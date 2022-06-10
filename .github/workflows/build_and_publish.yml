@@ -38,7 +38,7 @@ jobs:
       - name: Publish to Maven
         run: ./gradlew build javadocjar publish --stacktrace
         env:
-          BUILD_NUMBER: ${{ steps.buildnumber.outputs.build_number }}
-          MAVEN_URL: ${{ github.event.input.maven_url }}
-          MAVEN_USERNAME: ${{ github.event.input.maven_username }}
-          MAVEN_PASSWORD: ${{ github.event.input.maven_password }}
+          ###BUILD_NUMBER: ${{ steps.buildnumber.outputs.build_number }}
+          MAVEN_URL: ${{ github.event.inputs.maven_url }}
+          MAVEN_USERNAME: ${{ github.event.inputs.maven_username }}
+          MAVEN_PASSWORD: ${{ github.event.inputs.maven_password }}
