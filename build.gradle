@@ -744,7 +744,8 @@ publishing {
 	repositories {
 		if (ENV.MAVEN_URL) {
 			maven {
-				url ENV.MAVEN_URL
+				name 'halotroop-blucobalt.dev'
+				url 'https://repo.blucobalt.dev/repository/maven-halotroop'
 				credentials {
 					username ENV.MAVEN_USERNAME
 					password ENV.MAVEN_PASSWORD
