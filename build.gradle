@@ -738,13 +738,12 @@ publishing {
 			artifact(constantsJar) {
 				classifier "constants"
 			}
-			artifact javadocJar
+			//artifact javadocJar
 		}
 	}
 	repositories {
 		if (ENV.MAVEN_URL) {
 			maven {
-				name 'publisher-maven'
 				url ENV.MAVEN_URL
 				credentials {
 					username ENV.MAVEN_USERNAME
