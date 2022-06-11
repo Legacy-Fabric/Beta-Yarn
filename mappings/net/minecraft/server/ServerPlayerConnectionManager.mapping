@@ -45,11 +45,12 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 	METHOD method_557 connectPlayer (Lnet/minecraft/class_10;Ljava/lang/String;)Lnet/minecraft/class_69;
 		ARG 1 connect
 		ARG 2 name
-	METHOD method_558 (Lnet/minecraft/class_54;DDDDILnet/minecraft/class_169;)V
-		ARG 1 playerBase
+	METHOD method_558 sendWorldEvent (Lnet/minecraft/class_54;DDDDILnet/minecraft/class_169;)V
+		ARG 1 player
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
+		ARG 8 radius
 		ARG 10 dimensionId
 		ARG 11 packet
 	METHOD method_559 sendToAll (Lnet/minecraft/class_169;)V
@@ -64,6 +65,8 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 	METHOD method_563 sendMessage (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 username
 		ARG 2 message
+	METHOD method_566 loadPlayer (Lnet/minecraft/class_69;)V
+		ARG 1 player
 	METHOD method_567 removeBan (Ljava/lang/String;)V
 		ARG 1 username
 	METHOD method_568 getAllPlayerNames ()Ljava/lang/String;
