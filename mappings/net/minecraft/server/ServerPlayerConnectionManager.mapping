@@ -12,14 +12,16 @@ CLASS net/minecraft/class_166 net/minecraft/server/ServerPlayerConnectionManager
 	FIELD field_587 bannedIPsFile Ljava/io/File;
 	FIELD field_588 operatorsFile Ljava/io/File;
 	FIELD field_589 whiteListFile Ljava/io/File;
+	FIELD field_590 playerHandler Lnet/minecraft/class_168;
 	FIELD field_591 whitelisted Z
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
 	METHOD method_549 getViewRadiusInBlocks ()I
-	METHOD method_550 (DDDDILnet/minecraft/class_169;)V
+	METHOD method_550 sendWorldEvent (DDDDILnet/minecraft/class_169;)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+		ARG 7 radius
 		ARG 9 dimensionId
 		ARG 10 packet
 	METHOD method_551 getPlayerView (I)Lnet/minecraft/class_167;

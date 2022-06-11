@@ -168,7 +168,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 4 meta
 	METHOD method_218 (Lnet/minecraft/class_25;)Z
 		ARG 1 box
-	METHOD method_219 drawCape (Lnet/minecraft/class_57;)V
+	METHOD method_219 (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_220 isDaylight ()Z
 	METHOD method_221 getRainGradient (F)F
@@ -187,6 +187,8 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 3 z
 	METHOD method_225 (Lnet/minecraft/class_25;)Z
 		ARG 1 box
+	METHOD method_226 (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_228 (II)I
 		ARG 1 x
 		ARG 2 z

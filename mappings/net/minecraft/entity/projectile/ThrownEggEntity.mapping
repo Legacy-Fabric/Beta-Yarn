@@ -6,3 +6,11 @@ CLASS net/minecraft/class_499 net/minecraft/entity/projectile/ThrownEggEntity
 	FIELD field_2042 inBlock I
 	FIELD field_2043 inGround Z
 	FIELD field_2044 thrower Lnet/minecraft/class_127;
+	METHOD <init> (Lnet/minecraft/class_18;DDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_127;)V
+		ARG 1 world
+		ARG 2 thrower

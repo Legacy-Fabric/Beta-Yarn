@@ -1,11 +1,17 @@
 CLASS net/minecraft/class_219 net/minecraft/network/ClientPlayPacketHandler
+	FIELD field_1968 mapTracker Lnet/minecraft/class_53;
 	FIELD field_1969 rand Ljava/util/Random;
 	FIELD field_1970 disconnected Z
-	FIELD field_1971 netHandler Lnet/minecraft/class_117;
+	FIELD field_1971 clientConnection Lnet/minecraft/class_117;
 	FIELD field_1972 client Lnet/minecraft/client/Minecraft;
 	FIELD field_1973 world Lnet/minecraft/class_454;
 	FIELD field_1974 isDone Z
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
+		ARG 1 client
+		ARG 2 hostName
+		ARG 3 address
 	METHOD method_1644 processPackets ()V
-	METHOD method_1645 (I)Lnet/minecraft/class_57;
+	METHOD method_1645 getEntity (I)Lnet/minecraft/class_57;
 		ARG 1 id
+	METHOD method_1647 disconnect ()V
 	METHOD method_1648 sendPacket (Lnet/minecraft/class_169;)V

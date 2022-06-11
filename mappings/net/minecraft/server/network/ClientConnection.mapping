@@ -19,6 +19,7 @@ CLASS net/minecraft/class_117 net/minecraft/server/network/ClientConnection
 		ARG 1 socket
 		ARG 2 name
 		ARG 3 handler
+	METHOD method_1122 interrupt ()V
 	METHOD method_1123 addPacketToQueue (Lnet/minecraft/class_169;)V
 		ARG 1 packet
 	METHOD method_1125 disconnectClient (Ljava/lang/String;[Ljava/lang/Object;)V
