@@ -24,7 +24,7 @@ CLASS net/minecraft/class_14 net/minecraft/world/BlockView
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_1783 isFullOpaque (III)Z
+	METHOD method_1783 isBlockFullOpaque (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
