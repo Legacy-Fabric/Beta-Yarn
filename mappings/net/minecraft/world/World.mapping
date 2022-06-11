@@ -21,6 +21,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_218 worldSource Lnet/minecraft/class_51;
 	FIELD field_219 dimensionData Lnet/minecraft/class_52;
 	FIELD field_220 properties Lnet/minecraft/class_7;
+	FIELD field_222 mapTracker Lnet/minecraft/class_53;
 	METHOD <init> (Lnet/minecraft/class_18;Lnet/minecraft/class_50;)V
 		ARG 1 world
 		ARG 2 dimension
@@ -68,13 +69,23 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_167 (Lnet/minecraft/class_56;IIIIIIZ)V
+		ARG 1 lightType
 	METHOD method_168 canSpawnEntity (Lnet/minecraft/class_25;)Z
+		ARG 1 box
+	METHOD method_170 (Lnet/minecraft/class_25;Lnet/minecraft/class_15;Lnet/minecraft/class_57;)Z
 		ARG 1 box
 	METHOD method_172 (Lnet/minecraft/class_54;IIII)V
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 	METHOD method_173 playWorldEvent (Lnet/minecraft/class_54;IIIII)V
+		ARG 1 player
+		ARG 2 eventId
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 eventFlags
 	METHOD method_174 getCount (Ljava/lang/Class;)I
 		ARG 1 entityClass
 	METHOD method_175 getEntities (Ljava/lang/Class;Lnet/minecraft/class_25;)Ljava/util/List;
@@ -82,6 +93,14 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	METHOD method_177 getPlayerByName (Ljava/lang/String;)Lnet/minecraft/class_54;
 		ARG 1 name
 	METHOD method_178 addParticle (Ljava/lang/String;DDDDDD)V
+		ARG 1 particleName
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xVelocity
+		ARG 10 yVelocity
+		ARG 12 zVelocity
+	METHOD method_179 playRecord (Ljava/lang/String;III)V
 	METHOD method_180 (Ljava/lang/String;Lnet/minecraft/class_58;)V
 		ARG 2 map
 	METHOD method_182 addEntities (Ljava/util/List;)V
@@ -108,6 +127,8 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 entity
 		ARG 2 target
 		ARG 3 distance
+	METHOD method_193 (Lnet/minecraft/class_57;Z)V
+		ARG 1 entity
 	METHOD method_195 saveLevel (ZLnet/minecraft/class_62;)V
 		ARG 2 listener
 	METHOD method_197 getChunkCache ()Lnet/minecraft/class_51;
@@ -128,9 +149,12 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_206 (Lnet/minecraft/class_25;)Z
+		ARG 1 box
 	METHOD method_209 addUnloadedEntities (Ljava/util/List;)V
 		ARG 1 entities
 	METHOD method_210 spawnEntity (Lnet/minecraft/class_57;)Z
+		ARG 1 entity
 	METHOD method_211 getEntities (Lnet/minecraft/class_57;Lnet/minecraft/class_25;)Ljava/util/List;
 	METHOD method_213 getThunderGradient (F)F
 		ARG 1 tickProgress
@@ -142,6 +166,10 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 meta
+	METHOD method_218 (Lnet/minecraft/class_25;)Z
+		ARG 1 box
+	METHOD method_219 drawCape (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_220 isDaylight ()Z
 	METHOD method_221 getRainGradient (F)F
 		ARG 1 tickProgress
@@ -157,11 +185,18 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_225 (Lnet/minecraft/class_25;)Z
+		ARG 1 box
 	METHOD method_228 (II)I
 		ARG 1 x
 		ARG 2 z
 	METHOD method_229 setBlock (IIII)Z
 	METHOD method_230 playWorldEvent (IIIII)V
+		ARG 1 eventId
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 eventFlags
 	METHOD method_231 removeEntity (Lnet/minecraft/class_57;)V
 		ARG 1 entity
 	METHOD method_233 (II)I
@@ -180,6 +215,8 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_241 (Lnet/minecraft/class_57;)V
+		ARG 1 entity
 	METHOD method_244 updateAdjacentBlocks (IIII)V
 		ARG 1 x
 		ARG 2 y

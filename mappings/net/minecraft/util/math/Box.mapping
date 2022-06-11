@@ -18,6 +18,7 @@ CLASS net/minecraft/class_25 net/minecraft/util/math/Box
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_105 clearList ()V
 	METHOD method_106 averageDimension ()D
 	METHOD method_86 duplicateAndExpand (DDD)Lnet/minecraft/class_25;
 		COMMENT @return a new {@link Box} expanded relative to this box's size
@@ -50,6 +51,8 @@ CLASS net/minecraft/class_25 net/minecraft/util/math/Box
 		ARG 10 maxZ
 	METHOD method_96 copy (Lnet/minecraft/class_25;)V
 		ARG 1 other
+	METHOD method_97 (Lnet/minecraft/class_25;D)D
+		ARG 1 box
 	METHOD method_98 duplicateAndTranslate (DDD)Lnet/minecraft/class_25;
 		ARG 1 x
 		ARG 3 y

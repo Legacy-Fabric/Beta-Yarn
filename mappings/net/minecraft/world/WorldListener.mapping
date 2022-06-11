@@ -5,5 +5,24 @@ CLASS net/minecraft/class_59 net/minecraft/world/WorldListener
 		ARG 3 z
 		ARG 4 blockEntity
 	METHOD method_1152 playWorldEvent (Lnet/minecraft/class_54;IIIII)V
+		ARG 1 player
+		ARG 2 eventId
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 eventFlags
 	METHOD method_1153 addParticle (Ljava/lang/String;DDDDDD)V
+		ARG 1 particleName
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 xVelocity
+		ARG 10 yVelocity
+		ARG 12 zVelocity
+	METHOD method_1155 playRecord (Ljava/lang/String;III)V
+		ARG 1 soundEvent
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_1156 drawCape (Lnet/minecraft/class_57;)V
+		ARG 1 entity
