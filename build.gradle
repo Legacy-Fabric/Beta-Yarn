@@ -37,9 +37,10 @@ plugins {
 
 def minecraft_version = "b1.7.3"
 
+def taskName = project.gradle.startParameter.taskNames[0]
 def ENV = System.getenv()
 // Fetch build number from Github Actions
-def build_number = ENV.BUILD_NUMBER ?: "local"
+def build_number = ENV.BUILD_NUMBER && taskName != "publishToMavenLocal" ? ENV.BUILD_NUMBER : "local"
 
 def yarnVersion = "${minecraft_version}+build.$build_number"
 version = yarnVersion
