@@ -11,3 +11,4 @@ out/
 .project
 !gradle/wrapper/gradle-wrapper.jar
 !gradle/wrapper/gradle-wrapper.properties
+!test-mod/gradle/wrapper/gradle-wrapper.jar

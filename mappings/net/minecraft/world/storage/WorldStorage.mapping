@@ -1,13 +1,9 @@
 CLASS net/minecraft/class_182 net/minecraft/world/storage/WorldStorage
 	METHOD method_1001 getWorldFormat ()Ljava/lang/String;
 	METHOD method_1002 getMetadata ()Ljava/util/List;
-	METHOD method_1004 getWorldData (Ljava/lang/String;)Lnet/minecraft/class_7;
 	METHOD method_1005 (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 2 worldName
 	METHOD method_1007 isOld (Ljava/lang/String;)Z
 		ARG 1 name
 	METHOD method_1008 convertWorld (Ljava/lang/String;Lnet/minecraft/class_62;)Z
 		ARG 1 worldDir
-	METHOD method_1009 createDimensionFile (Ljava/lang/String;Z)Lnet/minecraft/class_52;
-		ARG 1 name
-		ARG 2 mkDirs
