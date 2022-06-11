@@ -34,6 +34,7 @@ CLASS net/minecraft/client/Minecraft
 	FIELD field_2797 gameDirectory Ljava/io/File;
 	FIELD field_2798 mouseTicksProcessed I
 	FIELD field_2799 spawnMobCounter I
+	FIELD field_2800 uselessField [B
 	FIELD field_2801 interactionManager Lnet/minecraft/class_504;
 	FIELD field_2802 actualWidth I
 	FIELD field_2803 actualHeight I
