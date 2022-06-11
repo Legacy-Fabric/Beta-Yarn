@@ -19,6 +19,8 @@ repositories {
         name = 'Babric'
         url = 'https://maven.glass-launcher.net/babric'
     }
+
+	mavenLocal()
 }
 
 dependencies {
