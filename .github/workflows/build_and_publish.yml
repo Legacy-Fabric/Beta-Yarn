@@ -3,13 +3,17 @@ name: Publish
 on:
   workflow_dispatch:
     inputs:
+      maven_url: 
+        required: true
+        description: 'Maven URL'
+        default: 'https://repo.blucobalt.dev/repository/maven-halotroop'
       maven_username:
         required: true
-        description: 'Your blucobalt.dev Maven username.'
+        description: 'Your maven username.'
         default: 'halotroop2288'
       maven_password:
         required: true
-        description: 'Your blucobalt.dev Maven password'
+        description: 'Your maven password'
         default: ''
 
 jobs:
@@ -32,9 +36,9 @@ jobs:
       - name: Make Gradle Wrapper Executable
         run: chmod +x ./gradlew
       - name: Publish to Maven
-        run: ./gradlew publish
+        run: ./gradlew build publish --stacktrace
         env:
-          MAVEN_PUBLISH_TOKEN: ${{ secrets.TOKEN }}
-          BUILD_NUMBER: ${{ steps.buildnumber.outputs.build_number }}
-          MAVEN_USERNAME: ${{ github.input.event.maven_username }}
-          MAVEN_PASSWORD: ${{ github.input.event.maven_password }}
+          ###BUILD_NUMBER: ${{ steps.buildnumber.outputs.build_number }}
+          MAVEN_URL: ${{ github.event.inputs.maven_url }}
+          MAVEN_USERNAME: ${{ github.event.inputs.maven_username }}
+          MAVEN_PASSWORD: ${{ github.event.inputs.maven_password }}

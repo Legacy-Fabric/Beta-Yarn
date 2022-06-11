@@ -744,11 +744,14 @@ publishing {
 	repositories {
 		if (ENV.MAVEN_URL) {
 			maven {
-				name 'halotroop-blucobalt.dev'
-				url 'https://repo.blucobalt.dev/repository/maven-halotroop'
+				name 'publisher-maven'
+				url ENV.MAVEN_URL
 				credentials {
 					username ENV.MAVEN_USERNAME
 					password ENV.MAVEN_PASSWORD
+				}
+				authentication {
+					basic(BasicAuthentication)
 				}
 			}
 		}
@@ -756,18 +759,18 @@ publishing {
 }
 
 // A task to ensure that the version being released has not already been released.
-task checkVersion {
-	doFirst {
-		def xml = new URL("https://maven.glass-launcher.net/babric/babric/barn/maven-metadata.xml").text
-		def metadata = new groovy.xml.XmlSlurper().parseText(xml)
-		def versions = metadata.versioning.versions.version*.text()
-		if (versions.contains(version)) {
-			throw new RuntimeException("${version} has already been released!")
-		}
-	}
-}
+//task checkVersion {
+//	doFirst {
+//		def xml = new URL("https://maven.glass-launcher.net/babric/babric/barn/maven-metadata.xml").text
+//		def metadata = new groovy.xml.XmlSlurper().parseText(xml)
+//		def versions = metadata.versioning.versions.version*.text()
+//		if (versions.contains(version)) {
+//			throw new RuntimeException("${version} has already been released!")
+//		}
+//	}
+//}
 
-publish.mustRunAfter checkVersion
+//publish.mustRunAfter checkVersion
 
 static void mapJar(File output, File input, File mappings, File libraries, String from, String to,
 				   Action<TinyRemapper.Builder> action = {}) {
