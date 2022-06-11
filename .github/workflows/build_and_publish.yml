@@ -1,9 +1,7 @@
 name: Build and Publish
 on:
-  push:
-    branches:
-      - b1.7.3
-
+  workflow_dispatch:
+  
 jobs:
   build_and_publish:
     runs-on: ubuntu-latest
