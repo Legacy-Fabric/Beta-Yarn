@@ -1,7 +1,10 @@
 CLASS net/minecraft/class_555 net/minecraft/client/render/GameRenderer
+	FIELD field_2342 heldItemRenderer Lnet/minecraft/class_556;
 	FIELD field_2349 client Lnet/minecraft/client/Minecraft;
 	FIELD field_2353 cinematicPitchSmoother Lnet/minecraft/class_12;
 	FIELD field_2354 cinematicYawSmoother Lnet/minecraft/class_12;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 client
 	METHOD method_1841 (FJ)V
 		ARG 1 delta
 	METHOD method_1844 tick (F)V

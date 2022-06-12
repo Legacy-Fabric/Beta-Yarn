@@ -128,7 +128,7 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 		ARG 1 item
 		ARG 2 block
 	METHOD method_439 getTexturePosition (Lnet/minecraft/class_31;)I
-		ARG 1 item
+		ARG 1 stack
 	METHOD method_440 getNameColor (I)I
 	METHOD method_441 getTexturePosition (I)I
 		ARG 1 damage
@@ -154,7 +154,9 @@ CLASS net/minecraft/class_124 net/minecraft/item/Item
 	METHOD method_450 isEffectiveOn (Lnet/minecraft/class_17;)Z
 		ARG 1 block
 	METHOD method_451 use (Lnet/minecraft/class_31;Lnet/minecraft/class_18;Lnet/minecraft/class_54;)Lnet/minecraft/class_31;
-		ARG 1 item
+		COMMENT @return The {@link net.minecraft.item.ItemStack ItemStack}
+		COMMENT that replaces the stack in hand after using the item.
+		ARG 1 stack
 		ARG 2 world
 		ARG 3 player
 	METHOD method_452 setTexturePosition (II)Lnet/minecraft/class_124;

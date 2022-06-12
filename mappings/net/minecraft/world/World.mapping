@@ -14,6 +14,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_207 prevThunderGradient F
 	FIELD field_208 thunderGradient F
 	FIELD field_211 stopPhysics Z
+	FIELD field_212 autoSaveInterval I
 	FIELD field_213 difficulty I
 	FIELD field_214 rand Ljava/util/Random;
 	FIELD field_216 dimension Lnet/minecraft/class_50;
