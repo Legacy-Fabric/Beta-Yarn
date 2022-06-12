@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_315 net/minecraft/block/StillFluid
+CLASS net/minecraft/class_315 net/minecraft/block/StillFluidBlock
 	METHOD method_1037 (Lnet/minecraft/class_18;III)V
 		ARG 2 x
 		ARG 3 y

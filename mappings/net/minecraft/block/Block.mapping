@@ -131,7 +131,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 	FIELD field_1950 SAPLING Lnet/minecraft/class_17;
 	METHOD <init> (IILnet/minecraft/class_15;)V
 		ARG 1 id
-		ARG 2 tex
+		ARG 2 texture
 		ARG 3 material
 	METHOD <init> (ILnet/minecraft/class_15;)V
 		ARG 1 id

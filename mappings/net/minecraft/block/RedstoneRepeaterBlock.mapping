@@ -1,4 +1,5 @@
-CLASS net/minecraft/class_510 net/minecraft/block/RedstoneRepeater
+CLASS net/minecraft/class_510 net/minecraft/block/RedstoneRepeaterBlock
+	FIELD field_2123 TORCH_OFFSETS [D
 	FIELD field_2125 powered Z
 	METHOD <init> (IZ)V
 		ARG 1 id

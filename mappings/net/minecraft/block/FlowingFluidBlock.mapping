@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_327 net/minecraft/block/FlowingFluid
+CLASS net/minecraft/class_327 net/minecraft/block/FlowingFluidBlock
 	METHOD method_1052 (Lnet/minecraft/class_18;IIIII)I
 		ARG 2 x
 		ARG 3 y

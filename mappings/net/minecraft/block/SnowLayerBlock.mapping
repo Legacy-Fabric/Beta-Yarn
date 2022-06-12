@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_224 net/minecraft/block/SnowLayer
+CLASS net/minecraft/class_224 net/minecraft/block/SnowLayerBlock
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 texture
