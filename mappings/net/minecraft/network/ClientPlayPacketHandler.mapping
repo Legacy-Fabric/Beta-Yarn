@@ -13,5 +13,7 @@ CLASS net/minecraft/class_219 net/minecraft/network/ClientPlayPacketHandler
 	METHOD method_1644 processPackets ()V
 	METHOD method_1645 getEntity (I)Lnet/minecraft/class_57;
 		ARG 1 id
+	METHOD method_1646 sendPacketImmediately (Lnet/minecraft/class_169;)V
+		ARG 1 packet
 	METHOD method_1647 disconnect ()V
 	METHOD method_1648 sendPacket (Lnet/minecraft/class_169;)V
