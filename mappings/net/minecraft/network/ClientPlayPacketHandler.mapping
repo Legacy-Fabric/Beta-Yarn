@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_219 net/minecraft/network/ClientPlayPacketHandler
+	FIELD field_1967 hostDescription Ljava/lang/String;
+		COMMENT Oops! Called but never assigned!
 	FIELD field_1968 mapTracker Lnet/minecraft/class_53;
 	FIELD field_1969 rand Ljava/util/Random;
 	FIELD field_1970 disconnected Z
@@ -17,3 +19,4 @@ CLASS net/minecraft/class_219 net/minecraft/network/ClientPlayPacketHandler
 		ARG 1 packet
 	METHOD method_1647 disconnect ()V
 	METHOD method_1648 sendPacket (Lnet/minecraft/class_169;)V
+		ARG 1 packet
