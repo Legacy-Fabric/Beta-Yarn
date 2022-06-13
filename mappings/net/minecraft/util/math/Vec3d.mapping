@@ -8,6 +8,7 @@ CLASS net/minecraft/class_26 net/minecraft/util/math/Vec3d
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_1292 resetCreationIndex ()V
 	METHOD method_1293 create (DDD)Lnet/minecraft/class_26;
 		COMMENT Just a copy of the default constructor
 		ARG 0 x
@@ -37,5 +38,7 @@ CLASS net/minecraft/class_26 net/minecraft/util/math/Vec3d
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1305 clearList ()V
+	METHOD method_1307 subtractFrom (Lnet/minecraft/class_26;)Lnet/minecraft/class_26;
+		ARG 1 other
 	METHOD method_1309 (Lnet/minecraft/class_26;)Lnet/minecraft/class_26;
 		ARG 1 other

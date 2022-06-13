@@ -2,3 +2,18 @@ CLASS net/minecraft/class_63 net/minecraft/util/Vec3i
 	FIELD field_1482 x I
 	FIELD field_1483 y I
 	FIELD field_1484 z I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD <init> (Lnet/minecraft/class_63;)V
+		ARG 1 other
+			COMMENT creates a copy of another Vec3i
+	METHOD compareTo (Ljava/lang/Object;)I
+		ARG 1 other
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1235 distanceTo (III)D
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
