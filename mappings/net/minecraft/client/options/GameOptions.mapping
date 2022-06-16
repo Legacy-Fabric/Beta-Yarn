@@ -22,7 +22,7 @@ CLASS net/minecraft/class_322 net/minecraft/client/options/GameOptions
 	FIELD field_1464 fpsLimit I
 	FIELD field_1465 fancyGraphics Z
 	FIELD field_1466 ao Z
-	FIELD field_1467 skin Ljava/lang/String;
+	FIELD field_1467 activeTexturePack Ljava/lang/String;
 	FIELD field_1468 forwardKey Lnet/minecraft/class_386;
 	FIELD field_1469 leftKey Lnet/minecraft/class_386;
 	FIELD field_1470 backKey Lnet/minecraft/class_386;
