@@ -1,4 +1,8 @@
-CLASS net/minecraft/class_25 net/minecraft/util/math/Box
+CLASS net/minecraft/class_25 net/minecraft/util/math/AxixAlignedBoundingBox
+	COMMENT <a href="https://gdbooks.gitbooks.io/3dcollisions/content/Chapter1/aabb.html">
+	COMMENT The most efficient form of collsion detection,
+	COMMENT especially when used with voxels.
+	COMMENT </a>
 	FIELD field_129 minX D
 	FIELD field_130 minY D
 	FIELD field_131 minZ D
