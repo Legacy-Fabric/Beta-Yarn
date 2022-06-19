@@ -1,8 +1,9 @@
 CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
+	FIELD field_2052 vboCount I
 	FIELD field_2053 bufferSize I
 	FIELD field_2054 INSTANCE Lnet/minecraft/class_67;
 	FIELD field_2055 useTriangles Z
-	FIELD field_2056 unused Z
+	FIELD field_2056 useVbo Z
 	FIELD field_2057 byteBuffer Ljava/nio/ByteBuffer;
 	FIELD field_2058 intBuffer Ljava/nio/IntBuffer;
 	FIELD field_2059 floatBuffer Ljava/nio/FloatBuffer;
@@ -14,6 +15,7 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	FIELD field_2065 hasColor Z
 	FIELD field_2066 hasTexture Z
 	FIELD field_2067 hasNormals Z
+	FIELD field_2068 bufferIndex I
 	FIELD field_2069 vertexAmount I
 	FIELD field_2070 disableColor Z
 	FIELD field_2071 drawingMode I
@@ -21,9 +23,13 @@ CLASS net/minecraft/class_67 net/minecraft/client/render/Tessellator
 	FIELD field_2073 yOffset D
 	FIELD field_2074 zOffset D
 	FIELD field_2075 normal I
-	FIELD field_2076 drawing Z
-	FIELD field_2077 useFloatBuffer Z
-	METHOD method_1685 draw ()V
+	FIELD field_2076 tessellating Z
+	FIELD field_2077 canUseVbo Z
+	FIELD field_2078 vertexBuffer Ljava/nio/IntBuffer;
+	FIELD field_2079 vboIndex I
+	METHOD <init> (I)V
+		ARG 1 bufferSize
+	METHOD method_1685 tessellate ()V
 	METHOD method_1686 setTextureXY (DD)V
 	METHOD method_1687 addVertex (DDD)V
 	METHOD method_1688 vertex (DDDDD)V
