@@ -1,5 +1,14 @@
 CLASS net/minecraft/class_73 net/minecraft/server/world/ServerWorld
 	FIELD field_273 serverLevelSource Lnet/minecraft/class_79;
 	FIELD field_276 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_277 entityHashSet Lnet/minecraft/class_80;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_52;Ljava/lang/String;IJ)V
+		ARG 1 server
+		ARG 2 data
+		ARG 3 name
 		ARG 4 dimId
+		ARG 5 seed
+	METHOD method_184 (Lnet/minecraft/class_57;)Z
+		COMMENT Summons a weather entity for all players.
+		COMMENT
+		COMMENT In vanilla, the only weather entity is lightning.

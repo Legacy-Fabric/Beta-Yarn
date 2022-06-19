@@ -1,0 +1,36 @@
+CLASS paulscode/sound/SoundSystem
+	METHOD newStreamingSource (ZLjava/lang/String;Ljava/lang/String;ZFFFIF)V
+		COMMENT Creates a new streaming source.  The file may either be located within the
+		COMMENT JAR or at an online location.  If the file is online, filename must begin
+		COMMENT with "http://", since that is how SoundSystem recognizes URL paths.  If the
+		COMMENT file is located within the compiled JAR, the package in which sound files
+		COMMENT are located may be set by calling SoundSystemConfig.setSoundFilesPackage().
+		ARG 1 priority
+			COMMENT Setting this to true will prevent other sounds from overriding this one
+		ARG 2 sourceName
+			COMMENT A unique identifier for this source.  Two sources may not use the same sourceName
+		ARG 3 fileName
+			COMMENT The filename of the sound file to play at this source
+		ARG 4 toLoop
+			COMMENT Should this source loop, or play only once
+		ARG 5 x
+			COMMENT X position for this source
+		ARG 6 y
+			COMMENT Y position for this source
+		ARG 7 z
+			COMMENT Z position for this source
+		ARG 8 attModel
+			COMMENT Attenuation model to use
+		ARG 9 distOrRoll
+			COMMENT Either the fading distance or rolloff factor, depending on the value of "attmodel"
+	METHOD newStreamingSource (ZLjava/lang/String;Ljava/net/URL;Ljava/lang/String;ZFFFIF)V
+		ARG 1 priority
+		ARG 2 sourceName
+		ARG 3 url
+		ARG 4 identifier
+		ARG 5 toLoop
+		ARG 6 x
+		ARG 7 y
+		ARG 8 z
+		ARG 9 attModel
+		ARG 10 distOrRoll

@@ -16,3 +16,4 @@ CLASS net/minecraft/class_578 net/minecraft/client/render/entity/EntityRenderDis
 		ARG 1 entity
 	METHOD method_1920 render (Lnet/minecraft/class_57;DDDFF)V
 		ARG 1 entity
+	METHOD method_1921 render (Lnet/minecraft/class_57;F)V

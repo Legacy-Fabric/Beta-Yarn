@@ -1,1 +1,7 @@
 CLASS net/minecraft/class_357 net/minecraft/packet/play/StanceUpdateC2SPacket
+	FIELD field_1330 horizontalVelocity F
+	FIELD field_1331 forwardVelocity F
+	FIELD field_1332 jumping Z
+	METHOD method_1174 getHorizontalVelocity ()F
+	METHOD method_1176 getForwardVelocity ()F
+	METHOD method_1178 isJumping ()Z

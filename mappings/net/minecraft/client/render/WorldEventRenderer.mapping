@@ -1,9 +1,18 @@
-CLASS net/minecraft/class_471 net/minecraft/client/render/WorldRenderer
+CLASS net/minecraft/class_471 net/minecraft/client/render/WorldEventRenderer
+	FIELD field_1794 renderLists [Lnet/minecraft/class_472;
+	FIELD field_1795 blockEntities Ljava/util/List;
 	FIELD field_1805 world Lnet/minecraft/class_18;
 	FIELD field_1806 textureManager Lnet/minecraft/class_76;
 	FIELD field_1814 client Lnet/minecraft/client/Minecraft;
 	FIELD field_1815 blockRenderer Lnet/minecraft/class_13;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnet/minecraft/class_76;)V
+		ARG 1 client
+		ARG 2 textureManager
 	METHOD method_1539 renderSky (F)V
+	METHOD method_1544 renderEntities (Lnet/minecraft/class_26;Lnet/minecraft/class_68;F)V
+		ARG 1 pos
+		ARG 2 camera
+		ARG 3 delta
 	METHOD method_1551 getDebugFirstLine ()Ljava/lang/String;
 	METHOD method_1555 getDebugSecondLine ()Ljava/lang/String;
 	METHOD method_1556 renderClouds (F)V

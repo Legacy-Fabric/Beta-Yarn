@@ -8,6 +8,13 @@ CLASS net/minecraft/class_69 net/minecraft/server/entity/player/ServerPlayerEnti
 		ARG 2 world
 		ARG 3 name
 		ARG 4 interactionManager
+	METHOD method_308 updatePassengerVehicleBedState ()V
+	METHOD method_310 updateStance (FFZZFF)V
+		ARG 1 hVelocity
+		ARG 2 fVelocity
+		ARG 3 jumping
+		ARG 5 pitch
+		ARG 6 yaw
 	METHOD method_312 sendBlockEntity (Lnet/minecraft/class_55;)V
 	METHOD method_313 tick (Z)V
 	METHOD method_316 getShownItem (I)Lnet/minecraft/class_31;

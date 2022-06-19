@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_598 net/minecraft/client/util/CameraFrustum
+	FIELD field_2594 instance Lnet/minecraft/class_598;
+	METHOD method_1973 getInstance ()Lnet/minecraft/class_84;
+	METHOD method_1974 ([[FI)V
+		ARG 1 matrix
+		ARG 2 index
+	METHOD method_1975 init ()V

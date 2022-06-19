@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_573 net/minecraft/client/util/Camera
+	FIELD field_2465 frustum Lnet/minecraft/class_84;
+	FIELD field_2466 x D
+	FIELD field_2467 y D
+	FIELD field_2468 z D
+	METHOD method_1907 canSee (DDDDDD)Z
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ

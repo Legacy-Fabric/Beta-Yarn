@@ -57,7 +57,7 @@ CLASS net/minecraft/class_127 net/minecraft/entity/LivingEntity
 	METHOD method_940 canDespawn ()Z
 	METHOD method_941 getLookPitchSpeed ()I
 	METHOD method_942 cannotMove ()Z
-	METHOD method_943 isSleeping ()Z
+	METHOD method_943 isLyingOnBed ()Z
 	METHOD method_944 jump ()V
 	METHOD method_945 travel (FF)V
 	METHOD method_946 applyDamage (I)V

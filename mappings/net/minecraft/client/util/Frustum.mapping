@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_84 net/minecraft/client/util/Frustum
+	FIELD field_285 matrix [[F
+	FIELD field_286 xPoints [F
+	FIELD field_287 yPoints [F
+	FIELD field_288 zPoints [F
+	METHOD method_339 isInside (DDDDDD)Z
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ

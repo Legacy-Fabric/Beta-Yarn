@@ -8,6 +8,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 	FIELD field_198 entities Ljava/util/List;
 	FIELD field_199 blockEntities Ljava/util/List;
 	FIELD field_200 players Ljava/util/List;
+	FIELD field_201 weatherEntities Ljava/util/List;
 	FIELD field_204 unusedIncrement I
 	FIELD field_205 prevRainGradient F
 	FIELD field_206 rainGradient F
@@ -27,6 +28,7 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 world
 		ARG 2 dimension
 	METHOD <init> (Lnet/minecraft/class_52;Ljava/lang/String;JLnet/minecraft/class_50;)V
+		ARG 1 world
 		ARG 2 name
 		ARG 3 seed
 		ARG 5 dimension
@@ -76,6 +78,11 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 box
 	METHOD method_170 (Lnet/minecraft/class_25;Lnet/minecraft/class_15;Lnet/minecraft/class_57;)Z
 		ARG 1 box
+	METHOD method_171 (Lnet/minecraft/class_54;III)Z
+		ARG 1 player
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_172 (Lnet/minecraft/class_54;IIII)V
 		ARG 2 x
 		ARG 3 y
@@ -108,6 +115,8 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 1 newEntities
 	METHOD method_183 addWorldListener (Lnet/minecraft/class_59;)V
 		ARG 1 worldListener
+	METHOD method_184 summonWeatherEntity (Lnet/minecraft/class_57;)Z
+		ARG 1 entity
 	METHOD method_186 getClosestPlayerTo (Lnet/minecraft/class_57;D)Lnet/minecraft/class_54;
 		ARG 2 maxDistance
 	METHOD method_187 createExplosion (Lnet/minecraft/class_57;DDDF)Lnet/minecraft/class_60;

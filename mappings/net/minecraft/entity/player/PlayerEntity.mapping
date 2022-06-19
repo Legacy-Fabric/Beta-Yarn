@@ -13,7 +13,7 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 	FIELD field_527 handSwingTicks I
 	FIELD field_528 name Ljava/lang/String;
 	FIELD field_529 dimensionId I
-	FIELD field_536 sleeping Z
+	FIELD field_536 lyingOnBed Z
 	METHOD method_481 getScore ()I
 	METHOD method_483 getSleepTimer ()I
 	METHOD method_484 openCraftingScreen (III)V
@@ -24,6 +24,7 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 	METHOD method_486 openChestScreen (Lnet/minecraft/class_134;)V
 	METHOD method_487 openFurnaceScreen (Lnet/minecraft/class_138;)V
 	METHOD method_488 increaseStat (Lnet/minecraft/class_139;I)V
+		ARG 1 stat
 		ARG 2 amount
 	METHOD method_489 openSignScreen (Lnet/minecraft/class_140;)V
 	METHOD method_490 sendMessage (Ljava/lang/String;)V
@@ -36,14 +37,15 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 		ARG 2 y
 		ARG 3 z
 	METHOD method_496 updateCursorItem (Lnet/minecraft/class_31;)V
-	METHOD method_497 wakeUp (ZZZ)V
+	METHOD method_497 getOutOfBed (ZZZ)V
 	METHOD method_498 isPvpable ()Z
 	METHOD method_499 updateEyeHeight ()V
 	METHOD method_500 swingHand ()V
 	METHOD method_501 dropSelectedItem ()V
 	METHOD method_502 getHeldItem ()Lnet/minecraft/class_31;
 	METHOD method_503 breakHeldItem ()V
-	METHOD method_504 hasSleptEnough ()Z
+	METHOD method_504 isSleeping ()Z
+		COMMENT @return Whether the player has been lying down long enough to skip night
 	METHOD method_505 getSpawnPosition ()Lnet/minecraft/class_63;
 	METHOD method_506 setPlayerSpawn (Lnet/minecraft/class_63;)V
 	METHOD method_507 (Lnet/minecraft/class_18;Lnet/minecraft/class_63;)Lnet/minecraft/class_63;
@@ -60,3 +62,5 @@ CLASS net/minecraft/class_54 net/minecraft/entity/player/PlayerEntity
 	METHOD method_515 interactWith (Lnet/minecraft/class_57;)V
 	METHOD method_516 attack (Lnet/minecraft/class_57;)V
 	METHOD method_521 isBedPosValid ()Z
+	METHOD method_943 ()Z
+		COMMENT @return Whether the player is currently lying down on a bed
