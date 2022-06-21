@@ -83,10 +83,12 @@ CLASS net/minecraft/class_18 net/minecraft/world/World
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_172 (Lnet/minecraft/class_54;IIII)V
+	METHOD method_172 destroyFire (Lnet/minecraft/class_54;IIII)V
+		ARG 1 player
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 side
 	METHOD method_173 playWorldEvent (Lnet/minecraft/class_54;IIIII)V
 		ARG 1 player
 		ARG 2 eventId

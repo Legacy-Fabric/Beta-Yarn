@@ -10,13 +10,21 @@ CLASS net/minecraft/class_96 net/minecraft/util/io/StatsFileWriter
 		ARG 0 username
 		ARG 1 sessionId
 	METHOD method_1987 writeStat (Ljava/util/Map;Lnet/minecraft/class_139;I)V
+		ARG 1 statAmountMap
+		ARG 2 stat
 		ARG 3 amount
 	METHOD method_1988 isAchievementUnlocked (Lnet/minecraft/class_24;)Z
+		ARG 1 achievement
 	METHOD method_1989 write (Lnet/minecraft/class_139;)I
+		ARG 1 stat
 	METHOD method_1990 incrementStat (Lnet/minecraft/class_139;I)V
+		ARG 1 stat
 		ARG 2 amount
+	METHOD method_1991 touch ()V
+		COMMENT Has no function, but is always called before {@link #sync}
 	METHOD method_1992 achievementPutAll (Ljava/util/Map;)V
 	METHOD method_1993 isAchievementUnlockable (Lnet/minecraft/class_24;)Z
+		ARG 1 achievement
 	METHOD method_1994 sync ()V
 	METHOD method_1995 writeAll (Ljava/util/Map;)V
 	METHOD method_1996 tick ()V

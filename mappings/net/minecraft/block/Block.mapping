@@ -163,6 +163,7 @@ CLASS net/minecraft/class_17 net/minecraft/block/Block
 		ARG 5 blockMeta
 		ARG 6 extraInfo
 	METHOD method_1564 (Lnet/minecraft/class_18;IIILnet/minecraft/class_26;Lnet/minecraft/class_26;)Lnet/minecraft/class_27;
+		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
