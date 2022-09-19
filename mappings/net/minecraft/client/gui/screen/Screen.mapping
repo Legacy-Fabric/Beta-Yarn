@@ -14,7 +14,7 @@ CLASS net/minecraft/class_32 net/minecraft/client/gui/screen/Screen
 		ARG 1 mouseX
 		ARG 2 mouseY
 		ARG 3 delta
-	METHOD method_119 init ()V
+	METHOD method_119 initVanillaScreen ()V
 	METHOD method_120 buttonClicked (Lnet/minecraft/class_33;)V
 		ARG 1 button
 	METHOD method_121 isPauseScreen ()Z
