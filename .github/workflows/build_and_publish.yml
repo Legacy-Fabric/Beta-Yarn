@@ -14,19 +14,12 @@ jobs:
           java-version: 17
           distribution: temurin
 
-      - name: Build Number Generator
-        uses: einaregilsson/build-number@v3
-        with:
-          token: ${{ secrets.TOKEN }}
-
       - name: Make Gradle Wrapper Executable
         run: chmod +x ./gradlew
       - name: Publish to Maven Local and test conflicts
         run: ./gradlew publishToMavenLocal --stacktrace
-      - run: cd test-mod && ./gradlew build
+      - run: cd test-mod && ./gradlew build genSources
       - name: Publish to Maven
         run: ./gradlew publish --stacktrace
         env:
-          MAVEN_URL: "https://repo.blucobalt.dev/repository/maven-halotroop"
-          MAVEN_USERNAME: ${{ secrets.maven_username }}
-          MAVEN_PASSWORD: ${{ secrets.maven_password }}
+          MAVEN_PUBLISH_CREDENTIALS: ${{ secrets.MAVEN_PUBLISH_CREDENTIALS }}
