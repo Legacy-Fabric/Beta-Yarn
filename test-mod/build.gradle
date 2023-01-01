@@ -1,5 +1,5 @@
 plugins {
-    id 'babric-loom' version '0.12-SNAPSHOT'
+    id 'babric-loom' version '1.0-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -25,7 +25,7 @@ repositories {
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings "io.github.betterthanupdates:yarn:b1.7.3+build.local"
+    mappings "net.legacyfabric:beta-yarn:b1.7.3+build.local"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     implementation "org.slf4j:slf4j-api:1.8.0-beta4"
