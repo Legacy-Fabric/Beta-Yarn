@@ -1,5 +1,2 @@
-[*.gradle]
-indent_style = tab
-
-[*.java]
+[*.{gradle,mapping,unpick}]
 indent_style = tab

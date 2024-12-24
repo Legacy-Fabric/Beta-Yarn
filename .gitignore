@@ -1,14 +1,25 @@
 .gradle/
+*-merged.jar
+*-mapped.jar
+*-intermediary.jar
 *.DS_Store
 build/
 out/
+namedSrc/
+
+# idea
 .idea/
 *.iml
 *.iws
 *.ipr
 *.jar
-*.check
+
+# eclipse
+.eclipse
+.classpath
 .project
-!gradle/wrapper/gradle-wrapper.jar
-!gradle/wrapper/gradle-wrapper.properties
-!test-mod/gradle/wrapper/gradle-wrapper.jar
+.settings/
+
+# vscode
+.vscode/
+bin/
